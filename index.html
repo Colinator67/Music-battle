@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Which country has the best DJ ?</title>
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap" rel="stylesheet">
@@ -242,6 +244,7 @@ h1,h2,h3{line-height:1.1;margin:0}
 
   <!-- ================= SETUP ================= -->
   <section id="screen-setup">
+    <div id="loadError" class="panel hidden"><h2>Impossible de charger les données</h2><p class="muted" style="margin:0">Le fichier data/countries.json est introuvable. Ouvrez le site via GitHub Pages ou un serveur local (http://localhost), pas en double-cliquant sur index.html.</p></div>
     <div class="hero">
       <h1>Quel pays a les meilleurs DJ ?</h1>
       <p>Deux pays s'affrontent, chacun envoie ses DJ un par un, à tour de rôle. À la fin du duel, vous choisissez le vainqueur, puis on regarde qui aurait gagné aux vues YouTube.</p>
@@ -274,11 +277,7 @@ h1,h2,h3{line-height:1.1;margin:0}
     <div class="panel">
       <h2 style="margin-bottom:14px">Réglages</h2>
       <div class="opts">
-        <div class="field">
-          <label for="apiKey"><b>Clé API YouTube Data v3</b></label>
-          <input id="apiKey" type="password" autocomplete="off" placeholder="AIza…">
-          <span class="help">Nécessaire pour chercher les vidéos et récupérer le nombre de vues. Gratuite, à créer sur la <a href="https://console.cloud.google.com/apis/library/youtube.googleapis.com" target="_blank" rel="noopener">Google Cloud Console</a>. Elle reste dans votre navigateur.</span>
-        </div>
+        <p class="help" id="dataStatus" style="margin:0"></p>
         <label class="opt"><input type="checkbox" id="optShuffle" checked> <span><b>Tirage au sort du tableau</b><br><span class="help">Sinon, les pays sont placés dans l'ordre de la liste.</span></span></label>
         <label class="opt"><input type="checkbox" id="optAuto" checked> <span><b>Enchaîner automatiquement</b><br><span class="help">Passe au DJ suivant à la fin de chaque vidéo.</span></span></label>
         <label class="opt"><input type="checkbox" id="optLiveViews"> <span><b>Afficher les vues pendant l'écoute</b><br><span class="help">Par défaut, les vues restent cachées jusqu'au vote pour ne pas influencer votre choix.</span></span></label>
@@ -307,7 +306,7 @@ h1,h2,h3{line-height:1.1;margin:0}
       <div class="player-box">
         <div class="player-frame">
           <div id="yt"></div>
-          <div class="player-empty" id="playerEmpty">Chargement des vidéos…</div>
+          <div class="player-empty hidden" id="playerEmpty"></div>
         </div>
         <div class="now">
           <div class="who"><b id="nowArtist">—</b><small id="nowTitle"></small></div>
@@ -347,86 +346,13 @@ h1,h2,h3{line-height:1.1;margin:0}
 
 <script>
 /* =========================================================
-   DONNÉES — modifiez librement les DJ ici.
-   song est optionnel : sans titre, la recherche prend
-   le morceau le plus pertinent de l'artiste.
+   Les pays et DJ sont dans data/countries.json.
+   Les vidéos et les vues sont dans data/videos.json, généré
+   automatiquement par l'action GitHub (la clé API n'est
+   jamais dans le site).
    ========================================================= */
-const COUNTRIES = [
-  { id:"de", name:"Allemagne", flag:"🇩🇪", djs:[
-    {artist:"Robin Schulz", song:"Sugar"},
-    {artist:"Felix Jaehn", song:"Ain't Nobody (Loves Me Better)"},
-    {artist:"ATB", song:"9 PM (Till I Come)"},
-    {artist:"Paul Kalkbrenner", song:"Sky and Sand"} ]},
-  { id:"fr", name:"France", flag:"🇫🇷", djs:[
-    {artist:"David Guetta", song:"Titanium"},
-    {artist:"DJ Snake", song:"Taki Taki"},
-    {artist:"Bob Sinclar", song:"Love Generation"},
-    {artist:"Martin Solveig", song:"Hello"} ]},
-  { id:"it", name:"Italie", flag:"🇮🇹", djs:[
-    {artist:"Gigi D'Agostino", song:"L'Amour Toujours"},
-    {artist:"Benny Benassi", song:"Satisfaction"},
-    {artist:"Meduza", song:"Piece of Your Heart"},
-    {artist:"Gabry Ponte", song:"Geordie"} ]},
-  { id:"nl", name:"Pays-Bas", flag:"🇳🇱", djs:[
-    {artist:"Tiësto", song:"The Business"},
-    {artist:"Martin Garrix", song:"Animals"},
-    {artist:"Armin van Buuren", song:"Blah Blah Blah"},
-    {artist:"Afrojack", song:"Take Over Control"} ]},
-  { id:"en", name:"Angleterre", flag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", djs:[
-    {artist:"Alan Walker", song:"Faded"},
-    {artist:"Fatboy Slim", song:"Right Here, Right Now"},
-    {artist:"Jonas Blue", song:"Fast Car"},
-    {artist:"Joel Corry", song:"Head & Heart"} ]},
-  { id:"scan", name:"Scandinavie", flag:"🇸🇪🇳🇴", djs:[
-    {artist:"Avicii", song:"Wake Me Up"},
-    {artist:"Swedish House Mafia", song:"Don't You Worry Child"},
-    {artist:"Kygo", song:"Firestone"},
-    {artist:"Eric Prydz", song:"Call On Me"} ]},
-  { id:"ch", name:"Suisse", flag:"🇨🇭", djs:[
-    {artist:"DJ Antoine", song:"Ma Chérie"},
-    {artist:"Yves Larock", song:"Rise Up"},
-    {artist:"Remady", song:"No Superstar"},
-    {artist:"Mike Candys", song:"One Night in Ibiza"} ]},
-  { id:"at", name:"Autriche", flag:"🇦🇹", djs:[
-    {artist:"Parov Stelar", song:"Booty Swing"},
-    {artist:"Klangkarussell", song:"Sonnentanz"},
-    {artist:"LUM!X", song:"Monster"},
-    {artist:"DJ Ötzi", song:"Hey Baby"} ]},
-  { id:"es", name:"Espagne", flag:"🇪🇸", djs:[
-    {artist:"Sak Noel", song:"Loca People"},
-    {artist:"Juan Magán", song:"Bailando Por Ahí"},
-    {artist:"Javi Mula", song:"Come On"} ]},
-  { id:"pt", name:"Portugal", flag:"🇵🇹", djs:[
-    {artist:"Buraka Som Sistema", song:"Hangover (BaBaBa)"},
-    {artist:"Diego Miranda", song:"Ibiza for Dreams"},
-    {artist:"Mastiksoul", song:"Taking Over Me"},
-    {artist:"Kura", song:""} ]},
-  { id:"ru", name:"Russie", flag:"🇷🇺", djs:[
-    {artist:"Zedd", song:"The Middle"},
-    {artist:"Arty", song:"Sunrise"},
-    {artist:"Filatov & Karas", song:"Tell It to My Heart"},
-    {artist:"Nina Kraviz", song:"Ghetto Kraviz"} ]},
-  { id:"gr", name:"Grèce", flag:"🇬🇷", djs:[
-    {artist:"Playmen", song:"Fallin'"},
-    {artist:"Claydee", song:"Mamacita Buena"},
-    {artist:"Vangelis", song:"Chariots of Fire"} ]},
-  { id:"is", name:"Islande", flag:"🇮🇸", djs:[
-    {artist:"GusGus", song:"Over"},
-    {artist:"Kiasmos", song:"Blurred"},
-    {artist:"Hatari", song:"Hatrið mun sigra"} ]},
-  { id:"ie", name:"Irlande", flag:"🇮🇪", djs:[
-    {artist:"Shane Codd", song:"Get Out My Head"},
-    {artist:"Belters Only", song:"Make Me Feel Good"},
-    {artist:"Kettama", song:""} ]},
-  { id:"lu", name:"Luxembourg", flag:"🇱🇺", djs:[
-    {artist:"Packo Gualandris", song:""},
-    {artist:"Max Noesen", song:"Obverse"},
-    {artist:"DAMA DJ Luxembourg", song:""} ]},
-  { id:"hr", name:"Croatie", flag:"🇭🇷", djs:[
-    {artist:"Matroda", song:"4u"},
-    {artist:"Kosta Radman", song:"Bellerophon"},
-    {artist:"Ivan Mastermix", song:"Ederlezi"} ]},
-];
+let COUNTRIES = [];
+let DB = { updatedAt:null, tracks:{}, stats:{} };
 
 /* =========================================================
    Utilitaires
@@ -437,30 +363,53 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&l
 const fmtCompact = n => n == null ? "—" : new Intl.NumberFormat("fr-FR",{notation:"compact",maximumFractionDigits:1}).format(n);
 const fmtFull = n => n == null ? "—" : new Intl.NumberFormat("fr-FR").format(n);
 const shuffle = arr => { const a = arr.slice(); for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
-const decodeHtml = s => { const t = document.createElement("textarea"); t.innerHTML = s; return t.value; };
 
 const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch{ return d; } },
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch{} },
   del(k){ try{ localStorage.removeItem(k); }catch{} }
 };
-const K = { settings:"djb_settings", tour:"djb_tour", cache:"djb_cache_v1" };
+const K = { settings:"djb_settings2", tour:"djb_tour", picks:"djb_picks" };
+["djb_settings","djb_cache_v1"].forEach(store.del); // anciennes versions (clé API, cache)
 
 /* =========================================================
    État
    ========================================================= */
-let settings = Object.assign(
-  { apiKey:"", shuffle:true, autoNext:true, liveViews:false, selected:COUNTRIES.map(c=>c.id) },
-  store.get(K.settings, {})
-);
+let settings = Object.assign({ shuffle:true, autoNext:true, liveViews:false, selected:null }, store.get(K.settings, {}));
 let tour = store.get(K.tour, null);
-let ytCache = store.get(K.cache, {});
-let current = null; // {r, m, idx}
+let picks = store.get(K.picks, {}); // choix "Autre vidéo" / liens collés, par morceau
+let current = null;
 let ytPlayer = null, ytReady = false, ytQueued = null;
 
 const saveSettings = () => store.set(K.settings, settings);
 const saveTour = () => store.set(K.tour, tour);
-const saveCache = () => store.set(K.cache, ytCache);
+const savePicks = () => store.set(K.picks, picks);
+
+/* =========================================================
+   Vidéos (lecture de data/videos.json, aucun appel réseau)
+   ========================================================= */
+const trackKey = t => `${t.artist}|${t.song || ""}`;
+function makeVideo(id, fallbackTitle){
+  const s = DB.stats[id];
+  return { id, title: s?.t || fallbackTitle || "Vidéo YouTube", views: s ? s.v : null };
+}
+function videoFor(t){
+  const key = trackKey(t), p = picks[key];
+  if (p?.manual) return makeVideo(p.manual, "Vidéo collée");
+  const ids = DB.tracks[key] || [];
+  if (!ids.length) return null;
+  return makeVideo(ids[(p?.i || 0) % ids.length]);
+}
+function nextAlternative(t){
+  const key = trackKey(t), ids = DB.tracks[key] || [];
+  if (ids.length < 2) return false;
+  const p = picks[key];
+  const base = p?.manual ? -1 : (p?.i || 0);
+  picks[key] = { i: (base + 1) % ids.length };
+  savePicks();
+  t.video = videoFor(t);
+  return true;
+}
 
 /* =========================================================
    Écrans
@@ -468,7 +417,7 @@ const saveCache = () => store.set(K.cache, ytCache);
 function show(screen){
   ["setup","bracket","match","final"].forEach(s => $("#screen-"+s).classList.toggle("hidden", s !== screen));
   $("#bracketBtn").classList.toggle("hidden", !tour || screen === "bracket" || screen === "setup");
-  if (screen !== "match" && ytPlayer && ytPlayer.pauseVideo) { try{ ytPlayer.pauseVideo(); }catch{} }
+  if (screen !== "match" && ytReady) { try{ ytPlayer.pauseVideo(); }catch{} }
   window.scrollTo({top:0});
 }
 
@@ -488,27 +437,29 @@ function renderSetup(){
     btn.setAttribute("aria-pressed", settings.selected.includes(id));
     saveSettings(); updateStart();
   }));
-  $("#apiKey").value = settings.apiKey;
   $("#optShuffle").checked = settings.shuffle;
   $("#optAuto").checked = settings.autoNext;
   $("#optLiveViews").checked = settings.liveViews;
   $("#resumeBox").classList.toggle("hidden", !tour || tour.done);
+
+  const all = COUNTRIES.flatMap(c => c.djs);
+  const missing = all.filter(d => !(DB.tracks[trackKey(d)] || []).length).length;
+  let status = DB.updatedAt
+    ? `Vues mises à jour le ${new Date(DB.updatedAt).toLocaleString("fr-FR",{dateStyle:"long",timeStyle:"short"})}.`
+    : "Les vidéos n'ont pas encore été récupérées : lancez l'action GitHub « Mettre à jour les vidéos et publier ».";
+  if (DB.updatedAt && missing) status += ` ${missing} morceau(x) sans vidéo pour l'instant (lien à coller pendant le duel).`;
+  $("#dataStatus").textContent = status;
   updateStart();
 }
 function updateStart(){
   const n = settings.selected.length;
   $("#selCount").textContent = n;
-  const noKey = !settings.apiKey.trim();
   $("#startBtn").disabled = n < 2;
   const size = n >= 2 ? 2 ** Math.ceil(Math.log2(n)) : 0;
-  let msg = "";
-  if (n >= 2 && size !== n) msg = `${size - n} pays passeront directement au tour suivant (tableau de ${size}).`;
-  if (noKey) msg = (msg ? msg + " " : "") + "Sans clé API, vous devrez coller les liens YouTube à la main.";
-  $("#startHelp").textContent = msg;
+  $("#startHelp").textContent = (n >= 2 && size !== n) ? `${size - n} pays passeront directement au tour suivant (tableau de ${size}).` : "";
 }
 $("#allBtn").onclick = () => { settings.selected = COUNTRIES.map(c=>c.id); saveSettings(); renderSetup(); };
 $("#noneBtn").onclick = () => { settings.selected = []; saveSettings(); renderSetup(); };
-$("#apiKey").addEventListener("input", e => { settings.apiKey = e.target.value.trim(); saveSettings(); updateStart(); });
 $("#optShuffle").onchange = e => { settings.shuffle = e.target.checked; saveSettings(); };
 $("#optAuto").onchange = e => { settings.autoNext = e.target.checked; saveSettings(); };
 $("#optLiveViews").onchange = e => { settings.liveViews = e.target.checked; saveSettings(); };
@@ -529,12 +480,10 @@ function createTournament(){
   const padded = ids.concat(Array(size - ids.length).fill(null));
   const half = size / 2;
   const rounds = [];
-  // 1er tour : i contre i+half → les "byes" (null) affrontent toujours un vrai pays
   rounds.push(Array.from({length:half}, (_, i) => ({ a:padded[i], b:padded[i+half], winner:null, views:null })));
   for (let n = half/2; n >= 1; n /= 2) rounds.push(Array.from({length:n}, () => ({ a:null, b:null, winner:null, views:null })));
   tour = { rounds, stats:{}, done:false };
   ids.forEach(id => tour.stats[id] = { views:0, wins:0, popWins:0, out:null });
-  // résolution des exemptions
   rounds[0].forEach((m, i) => { if (!m.a || !m.b) setWinner(0, i, m.a || m.b, true); });
   saveTour();
 }
@@ -586,10 +535,7 @@ function renderBracket(){
       ${round.map((m, i) => {
         const isNext = nm && nm.r === r && nm.i === i;
         const slot = (id, side) => {
-          if (!id) {
-            const label = (r === 0) ? "Exempté" : "À déterminer";
-            return `<div class="slot tbd">${label}</div>`;
-          }
+          if (!id) return `<div class="slot tbd">${r === 0 ? "Exempté" : "À déterminer"}</div>`;
           const c = byId(id);
           const cls = m.winner ? (m.winner === id ? "win" : "lose") : "";
           const v = m.views ? `<span class="v">${fmtCompact(m.views[side])}</span>` : "";
@@ -621,7 +567,7 @@ function buildTracks(aId, bId){
     if (A[k]) out.push({ side:"a", country:aId, ...A[k] });
     if (B[k]) out.push({ side:"b", country:bId, ...B[k] });
   }
-  return out.map(t => ({ ...t, video:null, played:false }));
+  return out.map(t => ({ ...t, video: videoFor(t), played:false, tried:0 }));
 }
 
 function startMatch(r, i){
@@ -636,29 +582,21 @@ function startMatch(r, i){
   $("#voteBox").innerHTML = "";
   $("#voteBox").classList.add("hidden");
   hideNotice();
-  renderTracks();
   show("match");
-  // recherche de toutes les vidéos du duel, en parallèle
-  const tracksRef = current.tracks;
-  Promise.all(tracksRef.map(t => resolveTrack(t).then(() => { if (current && current.tracks === tracksRef) renderTracks(); })))
-    .then(() => { if (current && current.tracks === tracksRef) updateVoteBox(); });
   playIndex(0);
 }
 
-function trackQuery(t){ return `${t.artist} ${t.song || ""} official`.replace(/\s+/g," ").trim(); }
-
-function viewsVisible(){ return settings.liveViews || (current && current.voted); }
+const viewsVisible = () => settings.liveViews || (current && current.voted);
 
 function renderTracks(){
   if (!current) return;
   const list = $("#trackList");
   list.innerHTML = current.tracks.map((t, k) => {
     const v = t.video;
-    const title = v ? v.title : (t.loading ? "Recherche…" : (t.error || "Aucune vidéo"));
-    const views = viewsVisible() && v ? `<span class="tv" title="${fmtFull(v.views)} vues">${fmtCompact(v.views)} vues</span>` : "";
+    const views = viewsVisible() && v && v.views != null ? `<span class="tv" title="${fmtFull(v.views)} vues">${fmtCompact(v.views)} vues</span>` : "";
     return `<li><button type="button" class="track side-${t.side} ${k===current.idx?"current":""} ${t.played?"played":""}" data-k="${k}">
       <span class="n"><span>${k+1}</span></span>
-      <span class="info"><b>${byId(t.country).flag} ${esc(t.artist)}</b><small>${esc(t.song || title)}</small></span>
+      <span class="info"><b>${byId(t.country).flag} ${esc(t.artist)}</b><small>${esc(t.song || (v ? v.title : "Pas de vidéo"))}</small></span>
       ${views}
     </button></li>`;
   }).join("");
@@ -670,14 +608,14 @@ function updateNow(){
   const t = current.tracks[current.idx];
   if (!t) return;
   $("#nowArtist").textContent = `${byId(t.country).flag} ${t.artist}`;
-  $("#nowTitle").textContent = t.video ? t.video.title : (t.loading ? "Recherche de la vidéo…" : (t.error || ""));
-  $("#nowViews").textContent = viewsVisible() && t.video ? `${fmtCompact(t.video.views)} vues` : "";
-  $("#nowViews").title = t.video ? `${fmtFull(t.video.views)} vues` : "";
+  $("#nowTitle").textContent = t.video ? t.video.title : "Pas encore de vidéo pour ce DJ.";
+  $("#nowViews").textContent = viewsVisible() && t.video && t.video.views != null ? `${fmtCompact(t.video.views)} vues` : "";
+  $("#nowViews").title = t.video && t.video.views != null ? `${fmtFull(t.video.views)} vues` : "";
   $("#prevBtn").disabled = current.idx === 0;
   $("#nextBtn").textContent = current.idx >= current.tracks.length - 1 ? "Passer au vote" : "DJ suivant";
 }
 
-async function playIndex(k){
+function playIndex(k){
   if (!current) return;
   current.idx = Math.max(0, Math.min(k, current.tracks.length - 1));
   const t = current.tracks[current.idx];
@@ -685,48 +623,33 @@ async function playIndex(k){
   hideNotice();
   renderTracks();
   updateVoteBox();
-  if (!t.video) await resolveTrack(t);
-  if (current && current.tracks[current.idx] === t){
-    renderTracks();
-    if (t.video) loadVideo(t.video.id);
-    else {
-      showEmpty(t.error || "Pas de vidéo trouvée. Collez un lien YouTube.");
-    }
-  }
+  if (t.video) loadVideo(t.video.id);
+  else showEmpty("Pas de vidéo trouvée pour ce DJ. Utilisez « Coller un lien ».");
 }
 
 $("#prevBtn").onclick = () => playIndex(current.idx - 1);
 $("#nextBtn").onclick = () => {
-  if (current.idx >= current.tracks.length - 1){ current.tracks.forEach(t=>t.played=true); updateVoteBox(true); }
+  if (current.idx >= current.tracks.length - 1){ current.tracks.forEach(t=>t.played=true); renderTracks(); updateVoteBox(true); }
   else playIndex(current.idx + 1);
 };
-$("#altBtn").onclick = async () => {
+$("#altBtn").onclick = () => {
   const t = current.tracks[current.idx];
-  const entry = ytCache[trackQuery(t)];
-  if (!entry || !entry.results || entry.results.length < 2){ showNotice("Pas d'autre résultat pour ce DJ. Collez un lien YouTube."); return; }
-  entry.pick = (entry.pick + 1) % entry.results.length;
-  saveCache();
-  t.video = entry.results[entry.pick];
+  if (!nextAlternative(t)){ showNotice("Pas d'autre vidéo en réserve pour ce DJ. Collez un lien YouTube."); return; }
   renderTracks(); loadVideo(t.video.id);
-  showNotice(`Résultat ${entry.pick + 1} sur ${entry.results.length}.`);
+  const n = (DB.tracks[trackKey(t)] || []).length;
+  showNotice(`Vidéo ${(picks[trackKey(t)].i) + 1} sur ${n}. Ce choix est retenu pour les prochaines parties.`);
 };
-$("#pasteBtn").onclick = async () => {
+$("#pasteBtn").onclick = () => {
   const t = current.tracks[current.idx];
   const url = prompt(`Lien YouTube pour ${t.artist}${t.song ? " – " + t.song : ""} :`);
   if (!url) return;
   const id = extractId(url);
   if (!id){ showNotice("Ce lien n'est pas une vidéo YouTube reconnue."); return; }
-  let video = { id, title:"Vidéo collée", views:null };
-  if (settings.apiKey){
-    try{ const [v] = await fetchVideos([id]); if (v) video = v; }catch(e){ showNotice(apiErrorText(e)); }
-  }
-  const q = trackQuery(t);
-  const entry = ytCache[q] || { results:[], pick:0 };
-  entry.results = [video, ...entry.results.filter(r => r.id !== id)];
-  entry.pick = 0;
-  ytCache[q] = entry; saveCache();
-  t.video = video; t.error = null;
+  picks[trackKey(t)] = { manual:id };
+  savePicks();
+  t.video = videoFor(t);
   renderTracks(); loadVideo(id); updateVoteBox();
+  if (t.video.views == null) showNotice("Vues inconnues pour une vidéo collée : pour la rendre permanente avec ses vues, ajoutez \"videoId\" à ce DJ dans data/countries.json.");
 };
 
 function extractId(s){
@@ -796,7 +719,7 @@ function vote(winnerId){
         <div class="bar-row b"><b>${B.flag} ${esc(B.name)}</b><div class="bar"><i data-w="${vb/max*100}"></i></div><b title="${fmtFull(vb)}">${fmtCompact(vb)} vues</b></div>
       </div>
       <p class="popular">${popular}</p>
-      ${missing ? `<p class="help" style="text-align:center">${missing} vidéo(s) sans nombre de vues ne sont pas comptées.</p>` : ""}
+      ${missing ? `<p class="help" style="text-align:center">${missing} morceau(x) sans nombre de vues ne sont pas comptés.</p>` : ""}
       <div class="actions"><button class="btn big" type="button" id="continueBtn">${tour.done ? "Voir le classement final" : "Retour au tableau"}</button></div>
     </div>`;
   requestAnimationFrame(() => requestAnimationFrame(() => box.querySelectorAll(".bar i").forEach(el => el.style.width = el.dataset.w + "%")));
@@ -840,137 +763,82 @@ function renderFinal(){
 }
 
 /* =========================================================
-   YOUTUBE DATA API (recherche + vues), avec cache local
-   Coût : search = 100 unités, videos = 1 unité.
-   Quota gratuit : 10 000 unités / jour ≈ 100 recherches.
+   LECTEUR YOUTUBE — créé dès l'ouverture de la page
+   pour qu'il soit prêt au premier duel
    ========================================================= */
-async function resolveTrack(t){
-  if (t.video) return;
-  const q = trackQuery(t);
-  const cached = ytCache[q];
-  if (cached && cached.results && cached.results.length){
-    t.video = cached.results[cached.pick || 0];
-    return;
-  }
-  if (!settings.apiKey){ t.error = "Pas de clé API : collez un lien YouTube."; return; }
-  if (t.loading) return t.loading;
-  t.loading = (async () => {
-    try{
-      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoEmbeddable=true&maxResults=5&q=${encodeURIComponent(q)}&key=${encodeURIComponent(settings.apiKey)}`;
-      const data = await getJSON(url);
-      const ids = (data.items || []).map(it => it.id.videoId).filter(Boolean);
-      if (!ids.length){ t.error = "Aucune vidéo trouvée."; return; }
-      const vids = await fetchVideos(ids);
-      // garder l'ordre de pertinence de la recherche
-      const results = ids.map(id => vids.find(v => v.id === id)).filter(Boolean);
-      ytCache[q] = { results, pick:0 }; saveCache();
-      t.video = results[0];
-    }catch(e){
-      t.error = apiErrorText(e);
-    }finally{
-      t.loading = null;
+window.onYouTubeIframeAPIReady = function(){
+  ytPlayer = new YT.Player("yt", {
+    playerVars: { rel:0, playsinline:1 },
+    events: {
+      onReady: () => {
+        ytReady = true;
+        if (ytQueued){ const id = ytQueued; ytQueued = null; ytPlayer.loadVideoById(id); }
+      },
+      onStateChange: e => {
+        if (e.data === YT.PlayerState.ENDED && current && settings.autoNext && !current.voted){
+          if (current.idx < current.tracks.length - 1) playIndex(current.idx + 1);
+          else updateVoteBox(true);
+        }
+      },
+      onError: e => handlePlayerError(e.data)
     }
-  })();
-  return t.loading;
-}
-
-async function fetchVideos(ids){
-  const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${ids.join(",")}&key=${encodeURIComponent(settings.apiKey)}`;
-  const data = await getJSON(url);
-  return (data.items || []).map(it => ({
-    id: it.id,
-    title: decodeHtml(it.snippet.title),
-    channel: it.snippet.channelTitle,
-    views: it.statistics && it.statistics.viewCount != null ? Number(it.statistics.viewCount) : null
-  }));
-}
-
-async function getJSON(url){
-  const res = await fetch(url);
-  const data = await res.json().catch(() => ({}));
-  if (!res.ok){
-    const err = new Error(data?.error?.message || res.statusText);
-    err.reason = data?.error?.errors?.[0]?.reason;
-    err.status = res.status;
-    throw err;
-  }
-  return data;
-}
-
-function apiErrorText(e){
-  if (e.reason === "quotaExceeded") return "Quota YouTube du jour épuisé. Réessayez demain ou collez les liens.";
-  if (e.reason === "keyInvalid" || e.status === 400) return "Clé API refusée. Vérifiez-la dans les réglages.";
-  if (e.status === 403) return "Accès refusé par YouTube. Vérifiez que l'API YouTube Data v3 est activée et les restrictions de la clé.";
-  return "Erreur réseau pendant la recherche YouTube.";
-}
-
-/* =========================================================
-   LECTEUR YOUTUBE (IFrame API)
-   ========================================================= */
+  });
+};
 (function loadYT(){
   const s = document.createElement("script");
   s.src = "https://www.youtube.com/iframe_api";
   document.head.appendChild(s);
 })();
-window.onYouTubeIframeAPIReady = function(){
-  ytReady = true;
-  if (ytQueued) { const id = ytQueued; ytQueued = null; loadVideo(id); }
-};
 
 function showEmpty(msg){
   const e = $("#playerEmpty");
   e.textContent = msg;
   e.classList.remove("hidden");
-  if (ytPlayer && ytPlayer.stopVideo) { try{ ytPlayer.stopVideo(); }catch{} }
+  if (ytReady) { try{ ytPlayer.stopVideo(); }catch{} }
 }
 
 function loadVideo(id){
   $("#playerEmpty").classList.add("hidden");
   if (!ytReady){ ytQueued = id; return; }
-  if (!ytPlayer){
-    ytPlayer = new YT.Player("yt", {
-      videoId: id,
-      playerVars: { autoplay:1, rel:0, modestbranding:1, playsinline:1 },
-      events: {
-        onStateChange: e => {
-          if (e.data === YT.PlayerState.ENDED && current && settings.autoNext && !current.voted){
-            if (current.idx < current.tracks.length - 1) playIndex(current.idx + 1);
-            else updateVoteBox(true);
-          }
-        },
-        onError: e => handlePlayerError(e.data)
-      }
-    });
-  } else {
-    ytPlayer.loadVideoById(id);
-  }
+  ytPlayer.loadVideoById(id);
 }
 
-// 101/150 = intégration interdite par le propriétaire → on essaie le résultat suivant
+// 100/101/150 : vidéo supprimée ou intégration interdite → on passe à la vidéo de réserve suivante
 function handlePlayerError(code){
   if (!current) return;
   const t = current.tracks[current.idx];
-  const entry = ytCache[trackQuery(t)];
-  if ((code === 101 || code === 150 || code === 100) && entry && entry.results.length > 1){
-    const tried = (t.tried = (t.tried || 0) + 1);
-    if (tried < entry.results.length){
-      entry.pick = (entry.pick + 1) % entry.results.length;
-      saveCache();
-      t.video = entry.results[entry.pick];
-      renderTracks(); loadVideo(t.video.id);
-      showNotice("Cette vidéo ne peut pas être intégrée, passage au résultat suivant.");
-      return;
-    }
+  const n = (DB.tracks[trackKey(t)] || []).length;
+  if ([100,101,150].includes(code) && t.tried < n - 1 && nextAlternative(t)){
+    t.tried++;
+    renderTracks(); loadVideo(t.video.id);
+    showNotice("Cette vidéo ne peut pas être lue ici, passage à une autre version.");
+    return;
   }
-  if (code === 153) showNotice("YouTube refuse la lecture : ouvrez le site via un serveur web (http://localhost), pas en double-cliquant sur le fichier.");
+  if (code === 153) showNotice("YouTube refuse la lecture : ouvrez le site via GitHub Pages ou http://localhost, pas en double-cliquant sur le fichier.");
   else showNotice("Impossible de lire cette vidéo ici. Essayez « Autre vidéo » ou collez un lien.");
 }
 
 /* =========================================================
-   Démarrage
+   Démarrage : chargement des données
    ========================================================= */
-renderSetup();
-show("setup");
+(async function init(){
+  try{
+    const [countries, videos] = await Promise.all([
+      fetch("data/countries.json", {cache:"no-cache"}).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+      fetch("data/videos.json", {cache:"no-cache"}).then(r => r.ok ? r.json() : null).catch(() => null)
+    ]);
+    COUNTRIES = countries;
+    if (videos) DB = Object.assign({ updatedAt:null, tracks:{}, stats:{} }, videos);
+  }catch{
+    $("#loadError").classList.remove("hidden");
+    return;
+  }
+  if (!Array.isArray(settings.selected)) settings.selected = COUNTRIES.map(c => c.id);
+  settings.selected = settings.selected.filter(byId);
+  if (tour && !Object.keys(tour.stats || {}).every(byId)) { tour = null; store.del(K.tour); }
+  renderSetup();
+  show("setup");
+})();
 </script>
 </body>
 </html>
