@@ -1,0 +1,346 @@
+[
+  {
+    "id": "de",
+    "name": "Allemagne",
+    "flag": "🇩🇪",
+    "djs": [
+      {
+        "artist": "Robin Schulz",
+        "song": "Sugar"
+      },
+      {
+        "artist": "Felix Jaehn",
+        "song": "Ain't Nobody (Loves Me Better)"
+      },
+      {
+        "artist": "ATB",
+        "song": "9 PM (Till I Come)"
+      },
+      {
+        "artist": "Paul Kalkbrenner",
+        "song": "Sky and Sand"
+      }
+    ]
+  },
+  {
+    "id": "fr",
+    "name": "France",
+    "flag": "🇫🇷",
+    "djs": [
+      {
+        "artist": "David Guetta",
+        "song": "Titanium"
+      },
+      {
+        "artist": "DJ Snake",
+        "song": "Taki Taki"
+      },
+      {
+        "artist": "Bob Sinclar",
+        "song": "Love Generation"
+      },
+      {
+        "artist": "Martin Solveig",
+        "song": "Hello"
+      }
+    ]
+  },
+  {
+    "id": "it",
+    "name": "Italie",
+    "flag": "🇮🇹",
+    "djs": [
+      {
+        "artist": "Gigi D'Agostino",
+        "song": "L'Amour Toujours"
+      },
+      {
+        "artist": "Benny Benassi",
+        "song": "Satisfaction"
+      },
+      {
+        "artist": "Meduza",
+        "song": "Piece of Your Heart"
+      },
+      {
+        "artist": "Gabry Ponte",
+        "song": "Geordie"
+      }
+    ]
+  },
+  {
+    "id": "nl",
+    "name": "Pays-Bas",
+    "flag": "🇳🇱",
+    "djs": [
+      {
+        "artist": "Tiësto",
+        "song": "The Business"
+      },
+      {
+        "artist": "Martin Garrix",
+        "song": "Animals"
+      },
+      {
+        "artist": "Armin van Buuren",
+        "song": "Blah Blah Blah"
+      },
+      {
+        "artist": "Afrojack",
+        "song": "Take Over Control"
+      }
+    ]
+  },
+  {
+    "id": "en",
+    "name": "Angleterre",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "djs": [
+      {
+        "artist": "Alan Walker",
+        "song": "Faded"
+      },
+      {
+        "artist": "Fatboy Slim",
+        "song": "Right Here, Right Now"
+      },
+      {
+        "artist": "Jonas Blue",
+        "song": "Fast Car"
+      },
+      {
+        "artist": "Joel Corry",
+        "song": "Head & Heart"
+      }
+    ]
+  },
+  {
+    "id": "scan",
+    "name": "Scandinavie",
+    "flag": "🇸🇪🇳🇴",
+    "djs": [
+      {
+        "artist": "Avicii",
+        "song": "Wake Me Up"
+      },
+      {
+        "artist": "Swedish House Mafia",
+        "song": "Don't You Worry Child"
+      },
+      {
+        "artist": "Kygo",
+        "song": "Firestone"
+      },
+      {
+        "artist": "Eric Prydz",
+        "song": "Call On Me"
+      }
+    ]
+  },
+  {
+    "id": "ch",
+    "name": "Suisse",
+    "flag": "🇨🇭",
+    "djs": [
+      {
+        "artist": "DJ Antoine",
+        "song": "Ma Chérie"
+      },
+      {
+        "artist": "Yves Larock",
+        "song": "Rise Up"
+      },
+      {
+        "artist": "Remady",
+        "song": "No Superstar"
+      },
+      {
+        "artist": "Mike Candys",
+        "song": "One Night in Ibiza"
+      }
+    ]
+  },
+  {
+    "id": "at",
+    "name": "Autriche",
+    "flag": "🇦🇹",
+    "djs": [
+      {
+        "artist": "Parov Stelar",
+        "song": "Booty Swing"
+      },
+      {
+        "artist": "Klangkarussell",
+        "song": "Sonnentanz"
+      },
+      {
+        "artist": "LUM!X",
+        "song": "Monster"
+      },
+      {
+        "artist": "DJ Ötzi",
+        "song": "Hey Baby"
+      }
+    ]
+  },
+  {
+    "id": "es",
+    "name": "Espagne",
+    "flag": "🇪🇸",
+    "djs": [
+      {
+        "artist": "Sak Noel",
+        "song": "Loca People"
+      },
+      {
+        "artist": "Juan Magán",
+        "song": "Bailando Por Ahí"
+      },
+      {
+        "artist": "Javi Mula",
+        "song": "Come On"
+      }
+    ]
+  },
+  {
+    "id": "pt",
+    "name": "Portugal",
+    "flag": "🇵🇹",
+    "djs": [
+      {
+        "artist": "Buraka Som Sistema",
+        "song": "Hangover (BaBaBa)"
+      },
+      {
+        "artist": "Diego Miranda",
+        "song": "Ibiza for Dreams"
+      },
+      {
+        "artist": "Mastiksoul",
+        "song": "Taking Over Me"
+      },
+      {
+        "artist": "Kura",
+        "song": ""
+      }
+    ]
+  },
+  {
+    "id": "ru",
+    "name": "Russie",
+    "flag": "🇷🇺",
+    "djs": [
+      {
+        "artist": "Zedd",
+        "song": "The Middle"
+      },
+      {
+        "artist": "Arty",
+        "song": "Sunrise"
+      },
+      {
+        "artist": "Filatov & Karas",
+        "song": "Tell It to My Heart"
+      },
+      {
+        "artist": "Nina Kraviz",
+        "song": "Ghetto Kraviz"
+      }
+    ]
+  },
+  {
+    "id": "gr",
+    "name": "Grèce",
+    "flag": "🇬🇷",
+    "djs": [
+      {
+        "artist": "Playmen",
+        "song": "Fallin'"
+      },
+      {
+        "artist": "Claydee",
+        "song": "Mamacita Buena"
+      },
+      {
+        "artist": "Vangelis",
+        "song": "Chariots of Fire"
+      }
+    ]
+  },
+  {
+    "id": "is",
+    "name": "Islande",
+    "flag": "🇮🇸",
+    "djs": [
+      {
+        "artist": "GusGus",
+        "song": "Over"
+      },
+      {
+        "artist": "Kiasmos",
+        "song": "Blurred"
+      },
+      {
+        "artist": "Hatari",
+        "song": "Hatrið mun sigra"
+      }
+    ]
+  },
+  {
+    "id": "ie",
+    "name": "Irlande",
+    "flag": "🇮🇪",
+    "djs": [
+      {
+        "artist": "Shane Codd",
+        "song": "Get Out My Head"
+      },
+      {
+        "artist": "Belters Only",
+        "song": "Make Me Feel Good"
+      },
+      {
+        "artist": "Kettama",
+        "song": ""
+      }
+    ]
+  },
+  {
+    "id": "lu",
+    "name": "Luxembourg",
+    "flag": "🇱🇺",
+    "djs": [
+      {
+        "artist": "Packo Gualandris",
+        "song": ""
+      },
+      {
+        "artist": "Max Noesen",
+        "song": "Obverse"
+      },
+      {
+        "artist": "DAMA DJ Luxembourg",
+        "song": ""
+      }
+    ]
+  },
+  {
+    "id": "hr",
+    "name": "Croatie",
+    "flag": "🇭🇷",
+    "djs": [
+      {
+        "artist": "Matroda",
+        "song": "4u"
+      },
+      {
+        "artist": "Kosta Radman",
+        "song": "Bellerophon"
+      },
+      {
+        "artist": "Ivan Mastermix",
+        "song": "Ederlezi"
+      }
+    ]
+  }
+]
