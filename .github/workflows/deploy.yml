@@ -1,0 +1,52 @@
+name: Mettre à jour les vidéos et publier
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 4 * * *"   # tous les jours à 4h UTC : vues fraîches
+  workflow_dispatch:       # bouton "Run workflow" dans l'onglet Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Récupérer les vidéos et les vues YouTube
+        continue-on-error: true   # en cas de souci (quota...), on publie avec les anciennes données
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: node scripts/update-videos.mjs
+
+      - name: Enregistrer data/videos.json dans le dépôt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data/videos.json
+          git diff --staged --quiet || (git commit -m "Mise à jour des vidéos et des vues" && git push)
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
