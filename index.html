@@ -410,7 +410,12 @@ const K = { settings:"djb_settings2", tour:"djb_tour", picks:"djb_picks" };
 /* =========================================================
    État
    ========================================================= */
-let settings = Object.assign({ shuffle:true, autoNext:true, liveViews:false, selected:null, genres:["electro"], perCountry:4, playMode:"embed" }, store.get(K.settings, {}));
+const isPhone = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1); // iPad récent
+let settings = Object.assign({ shuffle:true, autoNext:true, liveViews:false, selected:null, genres:["electro"], perCountry:4 }, store.get(K.settings, {}));
+// Lecture par défaut : nouvelle page sur téléphone, lecteur intégré sur ordinateur,
+// tant que l'utilisateur n'a pas fait son propre choix dans les réglages.
+if (!settings.playModeSet) settings.playMode = isPhone ? "youtube" : "embed";
 
 /* =========================================================
    Genres
@@ -450,8 +455,6 @@ const trackKey = t => `${t.artist}|${t.song || ""}`;
 const embedMode = () => settings.playMode !== "youtube";
 // Sur téléphone, un lien youtube.com ouvre l'appli YouTube. Le lecteur plein écran
 // youtube-nocookie.com/embed n'est pas pris en charge par l'appli : il reste dans le navigateur.
-const isPhone = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
-  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1); // iPad récent
 const browserPlayer = () => !embedMode() && isPhone;
 const needsEmbeddable = () => embedMode() || browserPlayer();
 const youtubeUrl = id => browserPlayer()
@@ -555,7 +558,7 @@ $("#perCountry").onchange = e => { settings.perCountry = +e.target.value; saveSe
 $("#allBtn").onclick = () => { settings.selected = COUNTRIES.map(c=>c.id); saveSettings(); renderSetup(); };
 $("#noneBtn").onclick = () => { settings.selected = []; saveSettings(); renderSetup(); };
 $("#optShuffle").onchange = e => { settings.shuffle = e.target.checked; saveSettings(); };
-$("#playMode").onchange = e => { settings.playMode = e.target.value; saveSettings(); if (embedMode()) ensureYT(); };
+$("#playMode").onchange = e => { settings.playMode = e.target.value; settings.playModeSet = true; saveSettings(); if (embedMode()) ensureYT(); };
 $("#optAuto").onchange = e => { settings.autoNext = e.target.checked; saveSettings(); };
 $("#optLiveViews").onchange = e => { settings.liveViews = e.target.checked; saveSettings(); };
 $("#startBtn").onclick = () => { createTournament(); renderBracket(); show("bracket"); };
