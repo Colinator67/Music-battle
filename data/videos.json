@@ -1,6 +1,6 @@
 {
  "rev": 3,
- "updatedAt": "2026-10-05T00:44:51.944Z",
+ "updatedAt": "2026-10-05T00:45:40.160Z",
  "tracks": {
   "Robin Schulz|Sugar": [
    "bvC_0foemLY",
@@ -120,7 +120,13 @@
    "wD0Mm6WIcYs",
    "AafuCyCL6aM"
   ],
-  "Benny Benassi|Satisfaction": [],
+  "Benny Benassi|Satisfaction": [
+   "ikX06rifHMg",
+   "V5bYDhZBFLA",
+   "EUFoZnK_fY4",
+   "a0fkNdPiIL4",
+   "qW7OiyPpVEU"
+  ],
   "Meduza|Piece of Your Heart": [],
   "Gabry Ponte|Geordie": [],
   "Måneskin|Beggin'": [
@@ -201,7 +207,13 @@
    "-LBk3mx6cMM"
   ],
   "Focus|Hocus Pocus": [],
-  "Duncan Laurence|Arcade": [],
+  "Duncan Laurence|Arcade": [
+   "QPzOeESWG5o",
+   "51u5fnyrGj4",
+   "afLScXH8uts",
+   "LEibQkljoiA",
+   "308v08mFWWc"
+  ],
   "Anouk|Nobody's Wife": [],
   "The Common Linnets|Calm After the Storm": [],
   "André Rieu|The Second Waltz": [
@@ -326,7 +338,13 @@
    "LMSYhyWDk-8",
    "Anes_yAXeoY"
   ],
-  "Krokus|Long Stick Goes Boom": [],
+  "Krokus|Long Stick Goes Boom": [
+   "l2iL2A0_zg4",
+   "dsYPCEIF4Bg",
+   "dmJ-ETe0aTQ",
+   "o7_7COXa1yQ",
+   "PRdX2J7BG0s"
+  ],
   "Züri West|I schänke dir mis Härz": [],
   "Nemo|The Code": [
    "RnVVTxSDzAA",
@@ -346,7 +364,13 @@
   ],
   "Chant populaire|Vreneli ab em Guggisberg": [],
   "Cor des Alpes|Alphorn": [],
-  "DJ BoBo|Chihuahua": [],
+  "DJ BoBo|Chihuahua": [
+   "G7QME0bzZuA",
+   "y654TxcRuL0",
+   "YfSSzJtOGhA",
+   "Pc6pS4g4M60",
+   "r2y7MIwVKyk"
+  ],
   "Yello|Oh Yeah": [],
   "Baschi|Bring en hei": [],
   "Parov Stelar|Booty Swing": [],
@@ -545,7 +569,13 @@
   "U2|With or Without You": [],
   "The Cranberries|Zombie": [],
   "Thin Lizzy|Whiskey in the Jar": [],
-  "Hozier|Take Me to Church": [],
+  "Hozier|Take Me to Church": [
+   "PVjiKRfKpPI",
+   "MYSVMgRr6pw",
+   "b6NGJfIoTGI",
+   "1kYgXOrA3Jc",
+   "SND2LY0s8FE"
+  ],
   "Sinéad O'Connor|Nothing Compares 2 U": [
    "0-EF60neguk",
    "Ouf9-bOqJVk",
@@ -672,14 +702,14 @@
   "F6bXSVQbk1o": {
    "t": "ATB - 9 PM (Till I Come) (1998) (4K Remastered)",
    "c": "Ediciones Moogoperator",
-   "v": 9824,
+   "v": 9825,
    "d": 197,
    "e": true
   },
   "QFGMQZyvnmY": {
    "t": "9Pm (Till I Come)",
    "c": "ATB - Topic",
-   "v": 28445806,
+   "v": 28445900,
    "d": 194,
    "e": true
   },
@@ -728,14 +758,14 @@
   "XHTMZX898mo": {
    "t": "NENA | 99 Luftballons (DE/FR) [2009] [Offizielles Musikvideo]",
    "c": "NENA",
-   "v": 566635,
+   "v": 566634,
    "d": 205,
    "e": true
   },
   "TMSlTQmDLx4": {
    "t": "99 Luftballons",
    "c": "Nena - Topic",
-   "v": 18927712,
+   "v": 18927738,
    "d": 229,
    "e": true
   },
@@ -756,7 +786,7 @@
   "HBGnU4Q5pRg": {
    "t": "Blau blüht der Enzian",
    "c": "Heino - Topic",
-   "v": 2304808,
+   "v": 2304838,
    "d": 263,
    "e": true
   },
@@ -770,21 +800,21 @@
   "HgOgOlaSs3w": {
    "t": "Blau blüht der Enzian",
    "c": "Heino - Topic",
-   "v": 71404,
+   "v": 71405,
    "d": 245,
    "e": true
   },
   "yy-ujMo8bdM": {
    "t": "Heino - Blau blüht der Enzian - 1992",
    "c": "VHS-Goldie",
-   "v": 1545615,
+   "v": 1545623,
    "d": 210,
    "e": true
   },
   "_eI3wYMVjeg": {
    "t": "Heino & Andre Rieu - Blau blüht der Enzian 2009",
    "c": "fritz51162",
-   "v": 1344963,
+   "v": 1344962,
    "d": 161,
    "e": true
   },
@@ -819,7 +849,7 @@
   "M5X_D_b-iTY": {
    "t": "Helene Fischer Atemlos Durch Die Nacht",
    "c": "Fabi Vegas",
-   "v": 200307,
+   "v": 200306,
    "d": 218,
    "e": true
   },
@@ -833,7 +863,7 @@
   "P-gWGlf_VrY": {
    "t": "David Guetta - Titanium (Audio)",
    "c": "aa",
-   "v": 4450887,
+   "v": 4450892,
    "d": 246,
    "e": true
   },
@@ -875,21 +905,21 @@
   "ZVKbRlUmjgQ": {
    "t": "Un autre monde (Remasterisé en 2006)",
    "c": "Telephone - Topic",
-   "v": 384617,
+   "v": 384629,
    "d": 272,
    "e": true
   },
   "WhdqA0CGCTo": {
    "t": "TELEPHONE - Un autre monde (Live 86)",
    "c": "TELEPHONE Le Groupe",
-   "v": 78071,
+   "v": 78074,
    "d": 393,
    "e": true
   },
   "t51JsUx9Q8Y": {
    "t": "Un Autre Monde - Telephone / Rockin'1000 That's Live Official",
    "c": "Rockin'1000",
-   "v": 821433,
+   "v": 821431,
    "d": 362,
    "e": true
   },
@@ -910,7 +940,7 @@
   "qSBXNJmdif8": {
    "t": "DIANA ANKUDINOVA (Диана Анкудинова) Last Dance (Dernière danse) \"First Audition\" (Age 14 yo)",
    "c": "Kwstas Vagias",
-   "v": 30320838,
+   "v": 30320897,
    "d": 135,
    "e": true
   },
@@ -945,7 +975,7 @@
   "rzeLynj1GYM": {
    "t": "Edith Piaf - La vie en rose (Officiel) [Live Version]",
    "c": "Edith Piaf",
-   "v": 30450371,
+   "v": 30450385,
    "d": 188,
    "e": true
   },
@@ -980,14 +1010,14 @@
   "IClpYwtSY3k": {
    "t": "Joe Dassin - Les Champs-Élysées (Festival europäischer Schlager 1970, 05.11.1970)",
    "c": "joedassinVEVO",
-   "v": 83243,
+   "v": 83261,
    "d": 147,
    "e": true
   },
   "7B4CLQGxHmI": {
    "t": "Les Champs-Elysées | Joe Dassin | Pomplamoose ft. John Schroeder",
    "c": "PomplamooseMusic",
-   "v": 11681138,
+   "v": 11681152,
    "d": 192,
    "e": true
   },
@@ -1001,7 +1031,7 @@
   "PA3P1-aSvKQ": {
    "t": "Les sardines - Patrick Sébastien",
    "c": "Patrick Sébastien",
-   "v": 23509071,
+   "v": 23509072,
    "d": 235,
    "e": true
   },
@@ -1022,7 +1052,7 @@
   "ATpkwaV0o3I": {
    "t": "Patrick Sebastien & Cyril Hanouna - Les Sardines (Fête De La Musique France 2)",
    "c": "generationhitmachine",
-   "v": 194692,
+   "v": 194693,
    "d": 267,
    "e": true
   },
@@ -1068,6 +1098,41 @@
    "d": 284,
    "e": true
   },
+  "ikX06rifHMg": {
+   "t": "Satisfaction",
+   "c": "Benny Benassi - Topic",
+   "v": 10865338,
+   "d": 286,
+   "e": true
+  },
+  "V5bYDhZBFLA": {
+   "t": "Benny Benassi - Satisfaction (Official Music Video) | Ministry of Sound",
+   "c": "Ministry of Sound",
+   "v": 58356459,
+   "d": 145,
+   "e": true
+  },
+  "EUFoZnK_fY4": {
+   "t": "Benny Benassi - Satisfaction (Official Video) UHD 4K",
+   "c": "Simoncat67",
+   "v": 609545,
+   "d": 147,
+   "e": true
+  },
+  "a0fkNdPiIL4": {
+   "t": "Benny Benassi - Satisfaction",
+   "c": "Ultra Records",
+   "v": 182783912,
+   "d": 147,
+   "e": true
+  },
+  "qW7OiyPpVEU": {
+   "t": "Satisfaction - Benny Benassi",
+   "c": "Johanna.211",
+   "v": 8635534,
+   "d": 196,
+   "e": true
+  },
   "D557gnClcwc": {
    "t": "Beggin'",
    "c": "Måneskin - Topic",
@@ -1085,7 +1150,7 @@
   "Qdkt3I5-FG4": {
    "t": "Beggin' Live From the American Music Awards 2021",
    "c": "Måneskin Official",
-   "v": 45403243,
+   "v": 45403305,
    "d": 195,
    "e": true
   },
@@ -1106,14 +1171,14 @@
   "lN5BVFYjraw": {
    "t": "Albachiara (Remastered 2019)",
    "c": "Vasco Rossi - Topic",
-   "v": 386490,
+   "v": 386487,
    "d": 245,
    "e": true
   },
   "AUjzIp-9O7c": {
    "t": "Albachiara",
    "c": "Vasco Rossi - Topic",
-   "v": 238379,
+   "v": 238385,
    "d": 277,
    "e": true
   },
@@ -1176,14 +1241,14 @@
   "TM6s_6Wie1w": {
    "t": "Luciano Pavarotti - 'O Sole Mio (Official Audio)",
    "c": "Luciano Pavarotti",
-   "v": 489891,
+   "v": 489894,
    "d": 206,
    "e": true
   },
   "JSYdOjlJiFw": {
    "t": "'O sole mio",
    "c": "Luciano Pavarotti - Topic",
-   "v": 50743,
+   "v": 50741,
    "d": 170,
    "e": true
   },
@@ -1211,7 +1276,7 @@
   "YXnUhQ7i7B8": {
    "t": "A far l'amore comincia tu (1999 vrs)",
    "c": "Raffaella Carra - Topic",
-   "v": 290630,
+   "v": 290634,
    "d": 156,
    "e": true
   },
@@ -1239,7 +1304,7 @@
   "n7_MRQTCOjo": {
    "t": "Raffaella Carra' / A far l'amore comincia tu (original version)",
    "c": "DJ TANOK MUSIC",
-   "v": 2209417,
+   "v": 2209424,
    "d": 162,
    "e": true
   },
@@ -1309,7 +1374,7 @@
   "3MQwSmco-PQ": {
    "t": "Martin Garrix ANIMALS   Livein the ULTRA MUSIC FESTIVAL DE MIAMI 2014",
    "c": "ultrakishi76",
-   "v": 9893384,
+   "v": 9893392,
    "d": 196,
    "e": true
   },
@@ -1383,6 +1448,41 @@
    "d": 319,
    "e": true
   },
+  "QPzOeESWG5o": {
+   "t": "Arcade",
+   "c": "Duncan Laurence - Topic",
+   "v": 53618973,
+   "d": 188,
+   "e": true
+  },
+  "51u5fnyrGj4": {
+   "t": "Duncan Laurence - Arcade (Lyric Video) ft. FLETCHER",
+   "c": "DuncanLaurenceVEVO",
+   "v": 169424209,
+   "d": 186,
+   "e": true
+  },
+  "afLScXH8uts": {
+   "t": "Duncan Laurence - Arcade (Lyric Video)",
+   "c": "DuncanLaurenceVEVO",
+   "v": 41860604,
+   "d": 186,
+   "e": true
+  },
+  "LEibQkljoiA": {
+   "t": "Duncan Laurence - Arcade (Acoustic Version)",
+   "c": "DuncanLaurenceVEVO",
+   "v": 28029196,
+   "d": 201,
+   "e": true
+  },
+  "308v08mFWWc": {
+   "t": "Duncan Laurence feat. FLETCHER – Arcade - Loving You Is A Losing Game (Live On The Ellen Show)",
+   "c": "DuncanLaurenceVEVO",
+   "v": 19935429,
+   "d": 194,
+   "e": true
+  },
   "fd16sNr9T2Q": {
    "t": "André Rieu - The Second Waltz (official video 2020)",
    "c": "André Rieu",
@@ -1393,7 +1493,7 @@
   "vauo4o-ExoY": {
    "t": "André Rieu - The Second Waltz (Shostakovich)",
    "c": "André Rieu",
-   "v": 89488673,
+   "v": 89488685,
    "d": 250,
    "e": true
   },
@@ -1512,7 +1612,7 @@
   "93Pn6UFCXlc": {
    "t": "Queen - Bohemian Rhapsody (Lyrics In Italian & English / Testo in Inglese e Italiano)",
    "c": "Queen Official",
-   "v": 1253505,
+   "v": 1253511,
    "d": 359,
    "e": true
   },
@@ -1526,14 +1626,14 @@
   "JGwWNGJdvx8": {
    "t": "Ed Sheeran - Shape of You (Official Music Video)",
    "c": "Ed Sheeran",
-   "v": 6818323083,
+   "v": 6818324210,
    "d": 264,
    "e": true
   },
   "_dK2tDK9grQ": {
    "t": "Ed Sheeran - Shape Of You [Official Lyric Video]",
    "c": "Ed Sheeran",
-   "v": 933658056,
+   "v": 933658086,
    "d": 235,
    "e": true
   },
@@ -1547,7 +1647,7 @@
   "OXrA-66bdiY": {
    "t": "Shape of You (Acoustic)",
    "c": "Ed Sheeran - Topic",
-   "v": 9473176,
+   "v": 9473186,
    "d": 224,
    "e": true
   },
@@ -1589,7 +1689,7 @@
   "2kRaPCY70-U": {
    "t": "Adele - Rolling In The Deep (Tradução/Legendado) (Live An Audience With Adele)",
    "c": "M.T.V Traduções",
-   "v": 13432066,
+   "v": 13432134,
    "d": 242,
    "e": true
   },
@@ -1638,7 +1738,7 @@
   "Orz_bA80Ut0": {
    "t": "Spice Girls - Wannabe (Music Video | Widescreen 16:9) • 4K",
    "c": "Spice Girls Mania ⍟",
-   "v": 1361325,
+   "v": 1361327,
    "d": 248,
    "e": true
   },
@@ -1673,7 +1773,7 @@
   "5y_KJAg8bHI": {
    "t": "Avicii - Wake Me Up (Official Lyric Video)",
    "c": "AviciiOfficialVEVO",
-   "v": 555717773,
+   "v": 555717998,
    "d": 252,
    "e": true
   },
@@ -1729,7 +1829,7 @@
   "zOZMdaoNo5A": {
    "t": "ABBA - Dancing Queen (Live - ABBA Down Under)",
    "c": "AbbaVEVO",
-   "v": 18645615,
+   "v": 18645701,
    "d": 219,
    "e": true
   },
@@ -1743,7 +1843,7 @@
   "abLtHH77pkA": {
    "t": "In The Hall Of The Mountain King",
    "c": "Edvard Grieg - Topic",
-   "v": 552540,
+   "v": 552542,
    "d": 167,
    "e": true
   },
@@ -1771,7 +1871,7 @@
   "apP448jksho": {
    "t": "Gotthard - Heaven (Videoclip)",
    "c": "GotthardVEVO",
-   "v": 13166226,
+   "v": 13166185,
    "d": 241,
    "e": true
   },
@@ -1785,7 +1885,7 @@
   "0SrnSS_m7sM": {
    "t": "Heaven",
    "c": "Gotthard - Topic",
-   "v": 42657,
+   "v": 42658,
    "d": 270,
    "e": true
   },
@@ -1803,10 +1903,45 @@
    "d": 259,
    "e": true
   },
+  "l2iL2A0_zg4": {
+   "t": "Long Stick Goes Boom",
+   "c": "Krokus - Topic",
+   "v": 1297913,
+   "d": 313,
+   "e": true
+  },
+  "dsYPCEIF4Bg": {
+   "t": "Long Stick Goes Boom (Remastered)",
+   "c": "Krokus - Topic",
+   "v": 111946,
+   "d": 314,
+   "e": true
+  },
+  "dmJ-ETe0aTQ": {
+   "t": "Long Stick Goes Boom (Remastered)",
+   "c": "Krokus - Topic",
+   "v": 56771,
+   "d": 311,
+   "e": true
+  },
+  "o7_7COXa1yQ": {
+   "t": "Krokus - Long Stick Goes Boom",
+   "c": "B5Erik",
+   "v": 1436612,
+   "d": 313,
+   "e": true
+  },
+  "PRdX2J7BG0s": {
+   "t": "KROKUS - Long Stick Goes Boom",
+   "c": "aganzx",
+   "v": 103449,
+   "d": 299,
+   "e": true
+  },
   "RnVVTxSDzAA": {
    "t": "Nemo - The Code (Acoustic version) (Official Music Video)",
    "c": "JustNemoThingsVEVO",
-   "v": 649601,
+   "v": 649597,
    "d": 191,
    "e": true
   },
@@ -1873,6 +2008,41 @@
    "d": 190,
    "e": true
   },
+  "G7QME0bzZuA": {
+   "t": "DJ BoBo - CHIHUAHUA (Official Music Video)",
+   "c": "DJ BoBo",
+   "v": 19415234,
+   "d": 189,
+   "e": true
+  },
+  "y654TxcRuL0": {
+   "t": "DJ BoBo - CHIHUAHUA ( Official Music Video )",
+   "c": "DJ BoBo",
+   "v": 7290836,
+   "d": 183,
+   "e": true
+  },
+  "YfSSzJtOGhA": {
+   "t": "DJ BoBo - Chihuahua (Official Audio)",
+   "c": "DJ BoBo",
+   "v": 668942,
+   "d": 182,
+   "e": true
+  },
+  "Pc6pS4g4M60": {
+   "t": "DJ BoBo - Chihuahua (Official Lyric Video)",
+   "c": "DJ BoBo",
+   "v": 100451,
+   "d": 197,
+   "e": true
+  },
+  "r2y7MIwVKyk": {
+   "t": "DJ BoBo - CHIHUAHUA ( Beverly Hills Chihuahua Version )",
+   "c": "DJ BoBo",
+   "v": 2931542,
+   "d": 185,
+   "e": true
+  },
   "J4xLGK9CM74": {
    "t": "Bologna",
    "c": "Wanda - Topic",
@@ -1890,7 +2060,7 @@
   "tDNj-h9FooY": {
    "t": "Wanda - Bologna live (Wien 2015)",
    "c": "wandawilde",
-   "v": 659434,
+   "v": 659435,
    "d": 338,
    "e": true
   },
@@ -1904,14 +2074,14 @@
   "o9Z-RewKd4o": {
    "t": "Wanda - Bologna live @ Nova Rock Festival 2025 / Video + Soundboardmix",
    "c": "Wanda",
-   "v": 7464,
+   "v": 7465,
    "d": 216,
    "e": true
   },
   "cVikZ8Oe_XA": {
    "t": "Falco - Rock Me Amadeus (Official Video)",
    "c": "FalcoVEVO",
-   "v": 95067366,
+   "v": 95067411,
    "d": 225,
    "e": true
   },
@@ -1939,7 +2109,7 @@
   "zUaSZXedM9Y": {
    "t": "Falco - Rock Me Amadeus [High Quality]",
    "c": "BenniRoR ­",
-   "v": 1014879,
+   "v": 1014880,
    "d": 203,
    "e": true
   },
@@ -1953,7 +2123,7 @@
   "t9HR_bVmYN0": {
    "t": "Mägo de Oz - Fiesta Pagana - Letra",
    "c": "Mägo de Oz Lyrics",
-   "v": 8844596,
+   "v": 8844643,
    "d": 298,
    "e": true
   },
@@ -1967,14 +2137,14 @@
   "Uf74L-Sxh0E": {
    "t": "Mägo de Oz - Fiesta Pagana (Video musical)",
    "c": "One Media Music - Español",
-   "v": 10283451,
+   "v": 10283469,
    "d": 342,
    "e": true
   },
   "iWHBmsOJ26E": {
    "t": "Mägo de Oz - Fiesta Pagana (Videoclip Original)",
    "c": "La Posada de Oz",
-   "v": 352845,
+   "v": 352846,
    "d": 347,
    "e": true
   },
@@ -2009,7 +2179,7 @@
   "n32mZd5SSlg": {
    "t": "Los Del Rio La Macarena Version Original Español",
    "c": "Carlos Yáñez",
-   "v": 4792120,
+   "v": 4792136,
    "d": 304,
    "e": true
   },
@@ -2037,14 +2207,14 @@
   "T-H2itCLmqg": {
    "t": "PAQUITO \"EL Chocolatero\". Dir.: Rafael Sanz Espert.",
    "c": "Voces para la Paz",
-   "v": 4304684,
+   "v": 4304686,
    "d": 213,
    "e": true
   },
   "2W9arid6R94": {
    "t": "paquito el chocolatero España   Italia santiago bernabeu",
    "c": "julio cesar vidal",
-   "v": 1082195,
+   "v": 1082190,
    "d": 102,
    "e": true
   },
@@ -2079,14 +2249,14 @@
   "ZHYGfjSbgh8": {
    "t": "Xutos & Pontapés - À Minha Maneira",
    "c": "Mr6santana",
-   "v": 800175,
+   "v": 800178,
    "d": 209,
    "e": true
   },
   "OpYR7ilLbfo": {
    "t": "Buraka Som Sistema - Kalemba (wegue wegue) OFFICIAL VIDEO",
    "c": "BURAKA",
-   "v": 13595972,
+   "v": 13595974,
    "d": 252,
    "e": true
   },
@@ -2107,7 +2277,7 @@
   "UXE-sLYlfO0": {
    "t": "buraka som sistema- kalemba (Wegue Wegue)- black diamond",
    "c": "286ASH",
-   "v": 554750,
+   "v": 554751,
    "d": 237,
    "e": true
   },
@@ -2128,7 +2298,7 @@
   "oXIXwZWMXdg": {
    "t": "Kalinka",
    "c": "The Red Army Choir - Topic",
-   "v": 2261929,
+   "v": 2261944,
    "d": 271,
    "e": true
   },
@@ -2163,28 +2333,28 @@
   "EqSclLcbvCA": {
    "t": "LITTLE BIG — SKIBIDI (Romantic Edition)",
    "c": "Little Big",
-   "v": 126121516,
+   "v": 126121523,
    "d": 210,
    "e": true
   },
   "wHzvcp7ccls": {
    "t": "LITTLE BIG – SKIBIDI VS MINECRAFT #skibidichallenge СКИБИДИ ПРОТИВ МАЙНКРАФТА",
    "c": "ARTEMedia",
-   "v": 24712087,
+   "v": 24712086,
    "d": 255,
    "e": true
   },
   "enpdGl1avjI": {
    "t": "Skibidi - Little Big",
    "c": "Lyrics Editor",
-   "v": 104841,
+   "v": 104840,
    "d": 164,
    "e": true
   },
   "vqhiJibyw-I": {
    "t": "Little Big-Skibidi",
    "c": "Артур Шафин",
-   "v": 13942,
+   "v": 13938,
    "d": 193,
    "e": true
   },
@@ -2198,7 +2368,7 @@
   "n0lhrN8-NeE": {
    "t": "Claydee - Mamacita Buena (Official Video)",
    "c": "Ultra Records",
-   "v": 232231,
+   "v": 232220,
    "d": 242,
    "e": true
   },
@@ -2247,7 +2417,7 @@
   "h3wo9rPEiq8": {
    "t": "Ta Pedia Tou Pirea (Remastered 1998)",
    "c": "Manos Hadjidakis - Topic",
-   "v": 68020,
+   "v": 68021,
    "d": 138,
    "e": true
   },
@@ -2317,7 +2487,7 @@
   "V-58I81gySE": {
    "t": "Bjork - It's Oh So Quiet 1995-11-02 Leno",
    "c": "guitarzip",
-   "v": 1270687,
+   "v": 1270688,
    "d": 245,
    "e": true
   },
@@ -2398,17 +2568,52 @@
    "d": 198,
    "e": true
   },
+  "PVjiKRfKpPI": {
+   "t": "Hozier - Take Me To Church",
+   "c": "HozierVEVO",
+   "v": 1002764212,
+   "d": 257,
+   "e": true
+  },
+  "MYSVMgRr6pw": {
+   "t": "Hozier - Take Me To Church",
+   "c": "HozierVEVO",
+   "v": 591432075,
+   "d": 241,
+   "e": true
+  },
+  "b6NGJfIoTGI": {
+   "t": "Hozier - Take Me To Church live at KROQ FM",
+   "c": "Hozier",
+   "v": 610116,
+   "d": 249,
+   "e": true
+  },
+  "1kYgXOrA3Jc": {
+   "t": "Hozier- Take Me To Church (Audio)",
+   "c": "Music Audios",
+   "v": 717834,
+   "d": 243,
+   "e": true
+  },
+  "SND2LY0s8FE": {
+   "t": "Hozier - Take Me To Church (Lyrics)",
+   "c": "Unique Sound",
+   "v": 45246096,
+   "d": 242,
+   "e": true
+  },
   "0-EF60neguk": {
    "t": "Sinéad O'Connor - Nothing Compares 2 U (Official Music Video) [HD]",
    "c": "SineadOConnorVEVO",
-   "v": 579964207,
+   "v": 579964536,
    "d": 309,
    "e": true
   },
   "Ouf9-bOqJVk": {
    "t": "Nothing Compares 2 U (2009 Remaster)",
    "c": "Sinéad O'Connor - Topic",
-   "v": 1356887,
+   "v": 1356893,
    "d": 311,
    "e": true
   },
@@ -2429,7 +2634,7 @@
   "29aF2yV2m_4": {
    "t": "Sinead O'Connor - Nothing Compares 2 U - Subtitulado Español & Inglés",
    "c": "VideoKas Subtitulados",
-   "v": 2555071,
+   "v": 2555078,
    "d": 321,
    "e": true
   },
@@ -2548,7 +2753,7 @@
   "z5_tqyCjFZ8": {
    "t": "Nina Badrić - Nebo (Croatia) 2012 Eurovision Song Contest Official Preview Video",
    "c": "Eurovision Song Contest",
-   "v": 3154913,
+   "v": 3154918,
    "d": 185,
    "e": true
   },
@@ -2583,7 +2788,7 @@
   "kv-UQmO08sc": {
    "t": "Baby Lasagna - Rim Tim Tagi Dim",
    "c": "Dora | HRT",
-   "v": 3587861,
+   "v": 3587874,
    "d": 189,
    "e": true
   },
@@ -2602,5 +2807,11 @@
    "e": true
   }
  },
- "searched": {}
+ "searched": {
+  "Duncan Laurence|Arcade": true,
+  "DJ BoBo|Chihuahua": true,
+  "Hozier|Take Me to Church": true,
+  "Benny Benassi|Satisfaction": true,
+  "Krokus|Long Stick Goes Boom": true
+ }
 }
