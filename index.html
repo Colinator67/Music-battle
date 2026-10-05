@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Which country has the best DJ ?</title>
+<title>Which country has the best music?</title>
 <link rel="preconnect" href="https://www.youtube.com">
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,6 +92,14 @@ h1,h2,h3{line-height:1.1;margin:0}
 .country b{display:block;font-size:1.05rem}
 .country small{display:block;color:var(--muted);font-size:.82rem;line-height:1.35}
 .country[aria-pressed="true"]{border-color:var(--gold);background:#2a1f12}
+.country:disabled{opacity:.35;cursor:not-allowed}
+.country:disabled[aria-pressed="true"]{border-color:var(--line);background:var(--ink)}
+.country:disabled[aria-pressed="true"]::after{content:none}
+.genres{display:flex;flex-wrap:wrap;gap:10px}
+.genre{border:2px solid var(--line);background:var(--ink);border-radius:999px;padding:10px 18px;font-weight:700;font-size:1.05rem}
+.genre[aria-pressed="true"]{border-color:var(--gold);background:var(--gold);color:var(--ink)}
+.genre-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
+.select{background:var(--ink);border:1px solid var(--line);border-radius:var(--radius-s);padding:8px 10px;color:var(--text);font:inherit}
 .country[aria-pressed="true"]::after{content:"✓";position:absolute;top:8px;right:12px;color:var(--gold);font-weight:800}
 
 .opts{display:grid;gap:12px}
@@ -145,6 +153,11 @@ h1,h2,h3{line-height:1.1;margin:0}
 .player-box{background:var(--stage);border:1px solid var(--line);border-radius:var(--radius-l);padding:14px;position:sticky;top:12px}
 .player-frame{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
 .player-frame iframe,.player-frame #yt{position:absolute;inset:0;width:100%;height:100%}
+.yt-card{position:absolute;inset:0;display:block;color:var(--text);text-decoration:none;background:#000}
+.yt-card img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.yt-card span{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px}
+.yt-card b{background:var(--text);color:var(--ink);border-radius:999px;padding:14px 26px;font-size:1.1rem}
+.yt-card:hover b{filter:brightness(.92)}
 .player-empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted)}
 .now{margin-top:12px;display:flex;align-items:flex-start;gap:12px}
 .now .who{flex:1;min-width:0}
@@ -166,6 +179,7 @@ h1,h2,h3{line-height:1.1;margin:0}
 .track .info{flex:1;min-width:0}
 .track .info b{display:block}
 .track .info small{display:block;color:var(--muted);font-size:.85rem}
+.track .tag{display:inline-block;font-size:.72rem;font-weight:700;color:var(--gold);border:1px solid currentColor;border-radius:999px;padding:0 7px;margin-left:6px;vertical-align:2px}
 .track .tv{font-size:.88rem;font-weight:700;white-space:nowrap}
 .track.current{background:var(--raise)}
 .track.side-a.current{box-shadow:inset 0 0 0 1px var(--a)}
@@ -236,7 +250,7 @@ h1,h2,h3{line-height:1.1;margin:0}
 <body>
 
 <header class="top">
-  <button class="logo" id="homeBtn" type="button" aria-label="Retour à l'accueil">Which country has the <span>best</span> <em>DJ</em>?</button>
+  <button class="logo" id="homeBtn" type="button" aria-label="Retour à l'accueil">Which country has the <span>best</span> <em id="logoWord">DJ</em>?</button>
   <button class="ghost hidden" id="bracketBtn" type="button">Voir le tableau</button>
 </header>
 
@@ -246,8 +260,8 @@ h1,h2,h3{line-height:1.1;margin:0}
   <section id="screen-setup">
     <div id="loadError" class="panel hidden"><h2>Impossible de charger les données</h2><p class="muted" style="margin:0">Le fichier data/countries.json est introuvable. Ouvrez le site via GitHub Pages ou un serveur local (http://localhost), pas en double-cliquant sur index.html.</p></div>
     <div class="hero">
-      <h1>Quel pays a les meilleurs DJ ?</h1>
-      <p>Deux pays s'affrontent, chacun envoie ses DJ un par un, à tour de rôle. À la fin du duel, vous choisissez le vainqueur, puis on regarde qui aurait gagné aux vues YouTube.</p>
+      <h1 id="heroTitle">Quel pays a les meilleurs DJ ?</h1>
+      <p>Deux pays s'affrontent, chacun envoie ses artistes un par un, à tour de rôle. À la fin du duel, vous choisissez le vainqueur, puis on regarde qui aurait gagné aux vues YouTube.</p>
     </div>
 
     <div id="resumeBox" class="panel hidden">
@@ -261,10 +275,22 @@ h1,h2,h3{line-height:1.1;margin:0}
     </div>
 
     <div class="panel">
+      <h2>Style de musique</h2>
+      <p class="muted" style="margin:0 0 14px">Choisissez un genre, ou plusieurs pour un mix : chaque pays envoie alors des morceaux de chaque genre choisi.</p>
+      <div class="genres" id="genreChips"></div>
+      <div class="genre-row">
+        <button class="btn line" id="mixAllBtn" type="button">Tout mélanger</button>
+        <label class="opt" style="align-items:center">Morceaux par pays
+          <select class="select" id="perCountry"><option>3</option><option>4</option><option>5</option></select>
+        </label>
+      </div>
+    </div>
+
+    <div class="panel">
       <div class="panel-head">
         <div>
           <h2>Pays en compétition</h2>
-          <p class="muted" style="margin:0"><span id="selCount">0</span> sélectionnés. Il en faut au moins 2.</p>
+          <p class="muted" style="margin:0"><span id="selCount">0</span> sélectionnés. Il en faut au moins 2. Les pays grisés n'ont pas assez de morceaux dans ce style.</p>
         </div>
         <div style="display:flex;gap:8px">
           <button class="btn line" id="allBtn" type="button">Tout sélectionner</button>
@@ -279,6 +305,14 @@ h1,h2,h3{line-height:1.1;margin:0}
       <div class="opts">
         <p class="help" id="dataStatus" style="margin:0"></p>
         <label class="opt"><input type="checkbox" id="optShuffle" checked> <span><b>Tirage au sort du tableau</b><br><span class="help">Sinon, les pays sont placés dans l'ordre de la liste.</span></span></label>
+        <div class="field">
+          <label for="playMode"><b>Lecture des vidéos</b></label>
+          <select class="select" id="playMode" style="max-width:340px">
+            <option value="embed">Dans le site (enchaînement automatique)</option>
+            <option value="youtube">Sur YouTube, dans un autre onglet</option>
+          </select>
+          <span class="help">Sur YouTube, la page du site reste ouverte : revenez-y et appuyez sur « DJ suivant » pour ouvrir le morceau suivant.</span>
+        </div>
         <label class="opt"><input type="checkbox" id="optAuto" checked> <span><b>Enchaîner automatiquement</b><br><span class="help">Passe au DJ suivant à la fin de chaque vidéo.</span></span></label>
         <label class="opt"><input type="checkbox" id="optLiveViews"> <span><b>Afficher les vues pendant l'écoute</b><br><span class="help">Par défaut, les vues restent cachées jusqu'au vote pour ne pas influencer votre choix.</span></span></label>
       </div>
@@ -306,6 +340,7 @@ h1,h2,h3{line-height:1.1;margin:0}
       <div class="player-box">
         <div class="player-frame">
           <div id="yt"></div>
+          <a class="yt-card hidden" id="ytCard" target="djbattle_youtube" rel="noopener"><img alt="" id="ytThumb"><span><b>Écouter sur YouTube</b></span></a>
           <div class="player-empty hidden" id="playerEmpty"></div>
         </div>
         <div class="now">
@@ -375,7 +410,30 @@ const K = { settings:"djb_settings2", tour:"djb_tour", picks:"djb_picks" };
 /* =========================================================
    État
    ========================================================= */
-let settings = Object.assign({ shuffle:true, autoNext:true, liveViews:false, selected:null }, store.get(K.settings, {}));
+let settings = Object.assign({ shuffle:true, autoNext:true, liveViews:false, selected:null, genres:["electro"], perCountry:4, playMode:"embed" }, store.get(K.settings, {}));
+
+/* =========================================================
+   Genres
+   ========================================================= */
+const GENRES = [
+  { id:"electro", label:"Électro",       word:"DJ",            hero:"les meilleurs DJ" },
+  { id:"rock",    label:"Rock",          word:"rock",          hero:"le meilleur rock" },
+  { id:"pop",     label:"Pop",           word:"pop",           hero:"la meilleure pop" },
+  { id:"trad",    label:"Traditionnel",  word:"folk",          hero:"les plus belles musiques traditionnelles" },
+  { id:"fete",    label:"Pour faire la fête", word:"party songs", hero:"les meilleurs tubes de soirée" },
+];
+const genreById = id => GENRES.find(g => g.id === id);
+const genresOf = c => c.genres || { electro: c.djs || [] };
+const poolOf = (c, gids) => gids.flatMap(g => (genresOf(c)[g] || []).map(t => ({ ...t, genre:g })));
+const MIN_TRACKS = 2;
+const eligible = c => {
+  const keys = new Set(poolOf(c, settings.genres).map(t => `${t.artist}|${t.song || ""}`));
+  return keys.size >= MIN_TRACKS;
+};
+function genreText(){
+  if (settings.genres.length === 1) return genreById(settings.genres[0]);
+  return { word:"music", hero:"la meilleure musique" };
+}
 let tour = store.get(K.tour, null);
 let picks = store.get(K.picks, {}); // choix "Autre vidéo" / liens collés, par morceau
 let current = null;
@@ -389,19 +447,32 @@ const savePicks = () => store.set(K.picks, picks);
    Vidéos (lecture de data/videos.json, aucun appel réseau)
    ========================================================= */
 const trackKey = t => `${t.artist}|${t.song || ""}`;
+const embedMode = () => settings.playMode !== "youtube";
+// Sur téléphone, un lien youtube.com ouvre l'appli YouTube. Le lecteur plein écran
+// youtube-nocookie.com/embed n'est pas pris en charge par l'appli : il reste dans le navigateur.
+const isPhone = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1); // iPad récent
+const browserPlayer = () => !embedMode() && isPhone;
+const needsEmbeddable = () => embedMode() || browserPlayer();
+const youtubeUrl = id => browserPlayer()
+  ? `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=0`
+  : `https://www.youtube.com/watch?v=${id}`;
 function makeVideo(id, fallbackTitle){
   const s = DB.stats[id];
-  return { id, title: s?.t || fallbackTitle || "Vidéo YouTube", views: s ? s.v : null };
+  return { id, title: s?.t || fallbackTitle || "Vidéo YouTube", views: s ? s.v : null, dur: s?.d ?? null };
 }
+// En lecture dans le site, on écarte les vidéos dont l'intégration est interdite
+const playableIds = t => (DB.tracks[trackKey(t)] || []).filter(id => !needsEmbeddable() || DB.stats[id]?.e !== false);
+const fmtDur = s => s == null ? "" : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 function videoFor(t){
   const key = trackKey(t), p = picks[key];
   if (p?.manual) return makeVideo(p.manual, "Vidéo collée");
-  const ids = DB.tracks[key] || [];
+  const ids = playableIds(t);
   if (!ids.length) return null;
   return makeVideo(ids[(p?.i || 0) % ids.length]);
 }
 function nextAlternative(t){
-  const key = trackKey(t), ids = DB.tracks[key] || [];
+  const key = trackKey(t), ids = playableIds(t);
   if (ids.length < 2) return false;
   const p = picks[key];
   const base = p?.manual ? -1 : (p?.i || 0);
@@ -425,12 +496,31 @@ function show(screen){
    SETUP
    ========================================================= */
 function renderSetup(){
+  const gt = genreText();
+  $("#logoWord").textContent = gt.word;
+  $("#heroTitle").textContent = `Quel pays a ${gt.hero} ?`;
+  document.title = `Which country has the best ${gt.word}?`;
+  $("#genreChips").innerHTML = GENRES.map(g =>
+    `<button class="genre" type="button" data-g="${g.id}" aria-pressed="${settings.genres.includes(g.id)}">${esc(g.label)}</button>`).join("");
+  $("#genreChips").querySelectorAll(".genre").forEach(b => b.onclick = () => {
+    const g = b.dataset.g;
+    const on = settings.genres.includes(g);
+    if (on && settings.genres.length === 1) return; // au moins un genre
+    settings.genres = on ? settings.genres.filter(x => x !== g) : [...settings.genres, g];
+    saveSettings(); renderSetup();
+  });
+  $("#perCountry").value = String(settings.perCountry);
+
   const grid = $("#countryGrid");
-  grid.innerHTML = COUNTRIES.map(c => `
-    <button class="country" type="button" data-id="${c.id}" aria-pressed="${settings.selected.includes(c.id)}">
+  grid.innerHTML = COUNTRIES.map(c => {
+    const ok = eligible(c);
+    const names = [...new Set(poolOf(c, settings.genres).map(t => t.artist))];
+    const preview = names.length ? names.slice(0, 5).join(", ") + (names.length > 5 ? "…" : "") : "Aucun morceau dans ce style";
+    return `<button class="country" type="button" data-id="${c.id}" aria-pressed="${settings.selected.includes(c.id)}" ${ok ? "" : "disabled"}>
       <span class="flag" aria-hidden="true">${c.flag}</span>
-      <span><b>${esc(c.name)}</b><small>${c.djs.map(d=>esc(d.artist)).join(", ")}</small></span>
-    </button>`).join("");
+      <span><b>${esc(c.name)}</b><small>${esc(preview)}</small></span>
+    </button>`;
+  }).join("");
   grid.querySelectorAll(".country").forEach(btn => btn.addEventListener("click", () => {
     const id = btn.dataset.id;
     settings.selected = settings.selected.includes(id) ? settings.selected.filter(x=>x!==id) : [...settings.selected, id];
@@ -439,10 +529,11 @@ function renderSetup(){
   }));
   $("#optShuffle").checked = settings.shuffle;
   $("#optAuto").checked = settings.autoNext;
+  $("#playMode").value = settings.playMode;
   $("#optLiveViews").checked = settings.liveViews;
   $("#resumeBox").classList.toggle("hidden", !tour || tour.done);
 
-  const all = COUNTRIES.flatMap(c => c.djs);
+  const all = COUNTRIES.flatMap(c => poolOf(c, GENRES.map(g => g.id)));
   const missing = all.filter(d => !(DB.tracks[trackKey(d)] || []).length).length;
   let status = DB.updatedAt
     ? `Vues mises à jour le ${new Date(DB.updatedAt).toLocaleString("fr-FR",{dateStyle:"long",timeStyle:"short"})}.`
@@ -451,16 +542,20 @@ function renderSetup(){
   $("#dataStatus").textContent = status;
   updateStart();
 }
+const activeSelection = () => settings.selected.filter(id => byId(id) && eligible(byId(id)));
 function updateStart(){
-  const n = settings.selected.length;
+  const n = activeSelection().length;
   $("#selCount").textContent = n;
   $("#startBtn").disabled = n < 2;
   const size = n >= 2 ? 2 ** Math.ceil(Math.log2(n)) : 0;
   $("#startHelp").textContent = (n >= 2 && size !== n) ? `${size - n} pays passeront directement au tour suivant (tableau de ${size}).` : "";
 }
+$("#mixAllBtn").onclick = () => { settings.genres = GENRES.map(g => g.id); saveSettings(); renderSetup(); };
+$("#perCountry").onchange = e => { settings.perCountry = +e.target.value; saveSettings(); };
 $("#allBtn").onclick = () => { settings.selected = COUNTRIES.map(c=>c.id); saveSettings(); renderSetup(); };
 $("#noneBtn").onclick = () => { settings.selected = []; saveSettings(); renderSetup(); };
 $("#optShuffle").onchange = e => { settings.shuffle = e.target.checked; saveSettings(); };
+$("#playMode").onchange = e => { settings.playMode = e.target.value; saveSettings(); if (embedMode()) ensureYT(); };
 $("#optAuto").onchange = e => { settings.autoNext = e.target.checked; saveSettings(); };
 $("#optLiveViews").onchange = e => { settings.liveViews = e.target.checked; saveSettings(); };
 $("#startBtn").onclick = () => { createTournament(); renderBracket(); show("bracket"); };
@@ -473,8 +568,33 @@ $("#newBtn").onclick = () => { tour = null; store.del(K.tour); renderSetup(); sh
 /* =========================================================
    TOURNOI
    ========================================================= */
+// Choisit les morceaux de chaque pays pour tout le tournoi
+function buildLineup(c){
+  const n = settings.perCountry;
+  const hasVideo = t => playableIds(t).length > 0;
+  const gids = settings.genres;
+  if (gids.length === 1){
+    // un seul genre : les premiers de la liste (les plus connus), en privilégiant ceux qui ont une vidéo
+    const pool = poolOf(c, gids);
+    return [...pool.filter(hasVideo), ...pool.filter(t => !hasVideo(t))].slice(0, n);
+  }
+  // mix : on tourne entre les genres, morceau au hasard dans chaque genre
+  const pools = shuffle(gids).map(g => {
+    const p = shuffle(poolOf(c, [g]));
+    return [...p.filter(hasVideo), ...p.filter(t => !hasVideo(t))];
+  }).filter(p => p.length);
+  const out = [], used = new Set();
+  while (out.length < n && pools.some(p => p.length)){
+    for (const p of pools){
+      while (p.length && used.has(trackKey(p[0]))) p.shift();
+      if (p.length && out.length < n){ const t = p.shift(); used.add(trackKey(t)); out.push(t); }
+    }
+  }
+  return out;
+}
+
 function createTournament(){
-  let ids = settings.selected.slice();
+  let ids = activeSelection();
   ids = settings.shuffle ? shuffle(ids) : COUNTRIES.map(c=>c.id).filter(id => ids.includes(id));
   const size = 2 ** Math.ceil(Math.log2(ids.length));
   const padded = ids.concat(Array(size - ids.length).fill(null));
@@ -482,7 +602,9 @@ function createTournament(){
   const rounds = [];
   rounds.push(Array.from({length:half}, (_, i) => ({ a:padded[i], b:padded[i+half], winner:null, views:null })));
   for (let n = half/2; n >= 1; n /= 2) rounds.push(Array.from({length:n}, () => ({ a:null, b:null, winner:null, views:null })));
-  tour = { rounds, stats:{}, done:false };
+  const lineups = {};
+  ids.forEach(id => lineups[id] = buildLineup(byId(id)));
+  tour = { rounds, stats:{}, done:false, lineups, genres: settings.genres.slice() };
   ids.forEach(id => tour.stats[id] = { views:0, wins:0, popWins:0, out:null });
   rounds[0].forEach((m, i) => { if (!m.a || !m.b) setWinner(0, i, m.a || m.b, true); });
   saveTour();
@@ -561,7 +683,7 @@ function renderBracket(){
    MATCH
    ========================================================= */
 function buildTracks(aId, bId){
-  const A = byId(aId).djs, B = byId(bId).djs;
+  const A = tour.lineups[aId], B = tour.lineups[bId];
   const out = [];
   for (let k=0; k<Math.max(A.length, B.length); k++){
     if (A[k]) out.push({ side:"a", country:aId, ...A[k] });
@@ -576,14 +698,14 @@ function startMatch(r, i){
   const A = byId(m.a), B = byId(m.b);
   $("#roundLabel").textContent = roundName(r);
   $("#vsBanner").innerHTML = `
-    <div class="side a"><span class="flag" aria-hidden="true">${A.flag}</span><span class="name">${esc(A.name)}</span><span class="djs">${A.djs.map(d=>esc(d.artist)).join(" / ")}</span></div>
+    <div class="side a"><span class="flag" aria-hidden="true">${A.flag}</span><span class="name">${esc(A.name)}</span><span class="djs">${tour.lineups[m.a].map(d=>esc(d.artist)).join(" / ")}</span></div>
     <div class="mid">VS</div>
-    <div class="side b"><span class="flag" aria-hidden="true">${B.flag}</span><span class="name">${esc(B.name)}</span><span class="djs">${B.djs.map(d=>esc(d.artist)).join(" / ")}</span></div>`;
+    <div class="side b"><span class="flag" aria-hidden="true">${B.flag}</span><span class="name">${esc(B.name)}</span><span class="djs">${tour.lineups[m.b].map(d=>esc(d.artist)).join(" / ")}</span></div>`;
   $("#voteBox").innerHTML = "";
   $("#voteBox").classList.add("hidden");
   hideNotice();
   show("match");
-  playIndex(0);
+  playIndex(0, false); // en mode YouTube, on n'ouvre pas d'onglet sans clic sur un morceau
 }
 
 const viewsVisible = () => settings.liveViews || (current && current.voted);
@@ -596,11 +718,11 @@ function renderTracks(){
     const views = viewsVisible() && v && v.views != null ? `<span class="tv" title="${fmtFull(v.views)} vues">${fmtCompact(v.views)} vues</span>` : "";
     return `<li><button type="button" class="track side-${t.side} ${k===current.idx?"current":""} ${t.played?"played":""}" data-k="${k}">
       <span class="n"><span>${k+1}</span></span>
-      <span class="info"><b>${byId(t.country).flag} ${esc(t.artist)}</b><small>${esc(t.song || (v ? v.title : "Pas de vidéo"))}</small></span>
+      <span class="info"><b>${byId(t.country).flag} ${esc(t.artist)}${tour.genres && tour.genres.length > 1 ? `<span class="tag">${esc(genreById(t.genre)?.label || "")}</span>` : ""}</b><small>${esc(t.song || (v ? v.title : "Pas de vidéo"))}${v && v.dur ? ` (${fmtDur(v.dur)})` : ""}</small></span>
       ${views}
     </button></li>`;
   }).join("");
-  list.querySelectorAll(".track").forEach(b => b.onclick = () => playIndex(+b.dataset.k));
+  list.querySelectorAll(".track").forEach(b => b.onclick = () => playIndex(+b.dataset.k, true));
   updateNow();
 }
 
@@ -615,7 +737,7 @@ function updateNow(){
   $("#nextBtn").textContent = current.idx >= current.tracks.length - 1 ? "Passer au vote" : "DJ suivant";
 }
 
-function playIndex(k){
+function playIndex(k, fromClick=true){
   if (!current) return;
   current.idx = Math.max(0, Math.min(k, current.tracks.length - 1));
   const t = current.tracks[current.idx];
@@ -623,8 +745,8 @@ function playIndex(k){
   hideNotice();
   renderTracks();
   updateVoteBox();
-  if (t.video) loadVideo(t.video.id);
-  else showEmpty("Pas de vidéo trouvée pour ce DJ. Utilisez « Coller un lien ».");
+  if (t.video) loadVideo(t.video.id, fromClick);
+  else showEmpty("Pas de vidéo trouvée pour ce morceau. Utilisez « Coller un lien ».");
 }
 
 $("#prevBtn").onclick = () => playIndex(current.idx - 1);
@@ -636,7 +758,7 @@ $("#altBtn").onclick = () => {
   const t = current.tracks[current.idx];
   if (!nextAlternative(t)){ showNotice("Pas d'autre vidéo en réserve pour ce DJ. Collez un lien YouTube."); return; }
   renderTracks(); loadVideo(t.video.id);
-  const n = (DB.tracks[trackKey(t)] || []).length;
+  const n = playableIds(t).length;
   showNotice(`Vidéo ${(picks[trackKey(t)].i) + 1} sur ${n}. Ce choix est retenu pour les prochaines parties.`);
 };
 $("#pasteBtn").onclick = () => {
@@ -784,21 +906,40 @@ window.onYouTubeIframeAPIReady = function(){
     }
   });
 };
-(function loadYT(){
+let ytLoading = false;
+function ensureYT(){
+  if (ytLoading) return;
+  ytLoading = true;
   const s = document.createElement("script");
   s.src = "https://www.youtube.com/iframe_api";
   document.head.appendChild(s);
-})();
+}
 
 function showEmpty(msg){
+  $("#ytCard").classList.add("hidden");
   const e = $("#playerEmpty");
   e.textContent = msg;
   e.classList.remove("hidden");
   if (ytReady) { try{ ytPlayer.stopVideo(); }catch{} }
 }
 
-function loadVideo(id){
+function loadVideo(id, open=true){
   $("#playerEmpty").classList.add("hidden");
+  const card = $("#ytCard");
+  if (!embedMode()){
+    // carte cliquable + ouverture dans un onglet réutilisé (ou l'appli YouTube sur mobile)
+    if (ytReady) { try{ ytPlayer.pauseVideo(); }catch{} }
+    $("#yt").style.visibility = "hidden";
+    const url = youtubeUrl(id);
+    card.href = url;
+    $("#ytThumb").src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    card.classList.remove("hidden");
+    if (open) window.open(url, "djbattle_youtube");
+    return;
+  }
+  card.classList.add("hidden");
+  $("#yt").style.visibility = "";
+  ensureYT();
   if (!ytReady){ ytQueued = id; return; }
   ytPlayer.loadVideoById(id);
 }
@@ -807,7 +948,7 @@ function loadVideo(id){
 function handlePlayerError(code){
   if (!current) return;
   const t = current.tracks[current.idx];
-  const n = (DB.tracks[trackKey(t)] || []).length;
+  const n = playableIds(t).length;
   if ([100,101,150].includes(code) && t.tried < n - 1 && nextAlternative(t)){
     t.tried++;
     renderTracks(); loadVideo(t.video.id);
@@ -835,9 +976,12 @@ function handlePlayerError(code){
   }
   if (!Array.isArray(settings.selected)) settings.selected = COUNTRIES.map(c => c.id);
   settings.selected = settings.selected.filter(byId);
-  if (tour && !Object.keys(tour.stats || {}).every(byId)) { tour = null; store.del(K.tour); }
+  if (tour && (!tour.lineups || !Object.keys(tour.stats || {}).every(byId))) { tour = null; store.del(K.tour); }
+  settings.genres = (settings.genres || []).filter(genreById);
+  if (!settings.genres.length) settings.genres = ["electro"];
   renderSetup();
   show("setup");
+  if (embedMode()) ensureYT();
 })();
 </script>
 </body>
