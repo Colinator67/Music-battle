@@ -25,6 +25,13 @@ const oldStats = db.stats || {};
 const searched = db.rev === REV ? (db.searched || {}) : {};
 
 const keyOf = d => `${d.artist}|${d.song || ""}`;
+// Lien écrit dans countries.json ("youtube": "https://www.youtube.com/watch?v=...") ou ancien champ videoId
+const forcedId = d => {
+  const s = String(d.youtube || d.videoId || "").trim();
+  if (/^[\w-]{11}$/.test(s)) return s;
+  const m = s.match(/(?:v=|youtu\.be\/|embed\/|shorts\/|live\/)([\w-]{11})/);
+  return m ? m[1] : null;
+};
 const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
 
 async function api(path, params) {
@@ -119,7 +126,7 @@ for (const c of countries) {
 // 2) On réévalue les vidéos déjà connues avec les règles actuelles (peu coûteux)
 const tracks = {};
 try {
-  await fetchDetails(wanted.flatMap(({ k, d }) => [...(d.videoId ? [d.videoId] : []), ...(oldTracks[k] || [])]));
+  await fetchDetails(wanted.flatMap(({ k, d }) => [...(forcedId(d) ? [forcedId(d)] : []), ...(oldTracks[k] || [])]));
 } catch (e) {
   // Sans les détails (quota épuisé...), impossible de vérifier les vidéos :
   // on s'arrête SANS toucher à data/videos.json pour ne rien effacer.
@@ -129,7 +136,8 @@ try {
 const toSearch = [];
 for (const { k, d, pos } of wanted) {
   let ids = rank(d, oldTracks[k] || []);
-  if (d.videoId) ids = [d.videoId, ...ids.filter(id => id !== d.videoId)]; // choix imposé, toujours en premier
+  const f = forcedId(d);
+  if (f) ids = [f, ...ids.filter(id => id !== f)]; // lien écrit dans le fichier : toujours en premier, jamais de recherche
   tracks[k] = ids;
   if (!ids.length && !searched[k]) toSearch.push({ k, d, pos });
 }
