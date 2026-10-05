@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 4 * * *"   # tous les jours à 4h UTC : vues fraîches
+    - cron: "0 9 * * *"   # tous les jours à 9h UTC, juste après la remise à zéro du quota YouTube
   workflow_dispatch:       # bouton "Run workflow" dans l'onglet Actions
 
 permissions:
