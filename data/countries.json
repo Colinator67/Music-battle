@@ -7,89 +7,108 @@
       "electro": [
         {
           "artist": "Robin Schulz",
-          "song": "Sugar"
+          "song": "Sugar",
+          "youtube": "https://www.youtube.com/watch?v=bvC_0foemLY"
         },
         {
           "artist": "Felix Jaehn",
-          "song": "Ain't Nobody (Loves Me Better)"
+          "song": "Ain't Nobody (Loves Me Better)",
+          "youtube": "https://www.youtube.com/watch?v=5j1RCys4R0g"
         },
         {
           "artist": "ATB",
-          "song": "9 PM (Till I Come)"
+          "song": "9 PM (Till I Come)",
+          "youtube": "https://www.youtube.com/watch?v=LCo33K7Fegg"
         },
         {
           "artist": "Paul Kalkbrenner",
-          "song": "Sky and Sand"
+          "song": "Sky and Sand",
+          "youtube": "https://www.youtube.com/watch?v=8ybFb_wKlvQ"
         }
       ],
       "rock": [
         {
           "artist": "Scorpions",
-          "song": "Wind of Change"
+          "song": "Wind of Change",
+          "youtube": "https://www.youtube.com/watch?v=n4RjJKxsamQ"
         },
         {
           "artist": "Rammstein",
-          "song": "Du hast"
+          "song": "Du hast",
+          "youtube": "https://www.youtube.com/watch?v=W3q8Od5qJio"
         },
         {
           "artist": "Die Toten Hosen",
-          "song": "Tage wie diese"
+          "song": "Tage wie diese",
+          "youtube": "https://www.youtube.com/watch?v=j09hpp3AxIE"
         },
         {
           "artist": "Tokio Hotel",
-          "song": "Durch den Monsun"
+          "song": "Durch den Monsun",
+          "youtube": "https://www.youtube.com/watch?v=S_Sy5-sOodA"
         }
       ],
       "pop": [
         {
           "artist": "Nena",
-          "song": "99 Luftballons"
+          "song": "99 Luftballons",
+          "youtube": "https://www.youtube.com/watch?v=Fpu5a0Bl8eY"
         },
         {
           "artist": "Lena",
-          "song": "Satellite"
+          "song": "Satellite",
+          "youtube": "https://www.youtube.com/watch?v=93ugDwiBVzA"
         },
         {
           "artist": "Mark Forster",
-          "song": "Chöre"
+          "song": "Chöre",
+          "youtube": "https://www.youtube.com/watch?v=6Mwvi40VSDU"
         },
         {
           "artist": "Kim Petras",
-          "song": "Coconuts"
+          "song": "Coconuts",
+          "youtube": "https://www.youtube.com/watch?v=ite2vY5qihc"
         }
       ],
       "trad": [
         {
           "artist": "Heino",
-          "song": "Blau blüht der Enzian"
+          "song": "Blau blüht der Enzian",
+          "youtube": "https://www.youtube.com/watch?v=HBGnU4Q5pRg"
         },
         {
           "artist": "Chant bavarois",
           "song": "Ein Prosit",
-          "query": "Ein Prosit der Gemütlichkeit Oktoberfest"
+          "query": "Ein Prosit der Gemütlichkeit Oktoberfest",
+          "youtube": "https://www.youtube.com/watch?v=dS8jpTozw0w"
         },
         {
           "artist": "Chant populaire",
           "song": "Das Wandern ist des Müllers Lust",
-          "query": "Das Wandern ist des Müllers Lust Volkslied"
+          "query": "Das Wandern ist des Müllers Lust Volkslied",
+          "youtube": "https://www.youtube.com/watch?v=r3C5wTrO2Wk"
         }
       ],
       "fete": [
         {
           "artist": "Helene Fischer",
-          "song": "Atemlos durch die Nacht"
+          "song": "Atemlos durch die Nacht",
+          "youtube": "https://www.youtube.com/watch?v=2czABFw6RnE"
         },
         {
           "artist": "Scooter",
-          "song": "How Much Is the Fish?"
+          "song": "How Much Is the Fish?",
+          "youtube": "https://www.youtube.com/watch?v=cbB3iGRHtqA"
         },
         {
           "artist": "DJ Robin & Schürze",
-          "song": "Layla"
+          "song": "Layla",
+          "youtube": "https://www.youtube.com/watch?v=gFx5vRxU2iE"
         },
         {
           "artist": "Mickie Krause",
-          "song": "Schatzi schenk mir ein Foto"
+          "song": "Schatzi schenk mir ein Foto",
+          "youtube": "https://www.youtube.com/watch?v=SW2pudHbd0M"
         }
       ]
     }
@@ -102,91 +121,111 @@
       "electro": [
         {
           "artist": "David Guetta",
-          "song": "Titanium"
+          "song": "Titanium",
+          "youtube": "https://www.youtube.com/watch?v=JRfuAukYTKg"
         },
         {
           "artist": "DJ Snake",
-          "song": "Taki Taki"
+          "song": "Taki Taki",
+          "youtube": "https://www.youtube.com/watch?v=ixkoVwKQaJg"
         },
         {
           "artist": "Bob Sinclar",
-          "song": "Love Generation"
+          "song": "Love Generation",
+          "youtube": "https://www.youtube.com/watch?v=ASKtxj9_gPE"
         },
         {
           "artist": "Martin Solveig",
-          "song": "Hello"
+          "song": "Hello",
+          "youtube": "https://www.youtube.com/watch?v=IiCb4vSqEHM"
         }
       ],
       "rock": [
         {
           "artist": "Téléphone",
-          "song": "Un autre monde"
+          "song": "Un autre monde",
+          "youtube": "https://www.youtube.com/watch?v=xqnZPHo6qx4"
         },
         {
           "artist": "Indochine",
-          "song": "L'aventurier"
+          "song": "L'aventurier",
+          "youtube": "https://www.youtube.com/watch?v=M7X6oYg6iro"
         },
         {
           "artist": "Noir Désir",
-          "song": "Le vent nous portera"
+          "song": "Le vent nous portera",
+          "youtube": "https://www.youtube.com/watch?v=NrgcRvBJYBE"
         },
         {
           "artist": "Johnny Hallyday",
-          "song": "Allumer le feu"
+          "song": "Allumer le feu",
+          "youtube": "https://www.youtube.com/watch?v=s3O1Xro7oAI"
         }
       ],
       "pop": [
         {
           "artist": "Indila",
-          "song": "Dernière danse"
+          "song": "Dernière danse",
+          "youtube": "https://www.youtube.com/watch?v=K5KAc5CoCuk"
         },
         {
           "artist": "Zaz",
-          "song": "Je veux"
+          "song": "Je veux",
+          "youtube": "https://www.youtube.com/watch?v=0TFNGRYMz1U"
         },
         {
           "artist": "Christine and the Queens",
-          "song": "Christine"
+          "song": "Christine",
+          "youtube": "https://www.youtube.com/watch?v=rs40yxHjTxQ"
         },
         {
           "artist": "Louane",
-          "song": "Jour 1"
+          "song": "Jour 1",
+          "youtube": "https://www.youtube.com/watch?v=yleB8fUXudw"
         }
       ],
       "trad": [
         {
           "artist": "Édith Piaf",
-          "song": "La Vie en rose"
+          "song": "La Vie en rose",
+          "youtube": "https://www.youtube.com/watch?v=-0KvBnIvTFs"
         },
         {
           "artist": "Charles Aznavour",
-          "song": "La Bohème"
+          "song": "La Bohème",
+          "youtube": "https://www.youtube.com/watch?v=fVfnEyLOkrM"
         },
         {
           "artist": "Joe Dassin",
-          "song": "Les Champs-Élysées"
+          "song": "Les Champs-Élysées",
+          "youtube": "https://www.youtube.com/watch?v=bb-DKKRN4o8"
         },
         {
           "artist": "Charles Trenet",
-          "song": "La Mer"
+          "song": "La Mer",
+          "youtube": "https://www.youtube.com/watch?v=PXQh9jTwwoA"
         }
       ],
       "fete": [
         {
           "artist": "Patrick Sébastien",
-          "song": "Les Sardines"
+          "song": "Les Sardines",
+          "youtube": "https://www.youtube.com/watch?v=PA3P1-aSvKQ"
         },
         {
           "artist": "La Bande à Basile",
-          "song": "La Chenille"
+          "song": "La Chenille",
+          "youtube": "https://www.youtube.com/watch?v=4sXksRgF5RM"
         },
         {
           "artist": "Ottawan",
-          "song": "D.I.S.C.O."
+          "song": "D.I.S.C.O.",
+          "youtube": "https://www.youtube.com/watch?v=KohGHXEQrSE"
         },
         {
           "artist": "Gilbert Montagné",
-          "song": "On va s'aimer"
+          "song": "On va s'aimer",
+          "youtube": "https://www.youtube.com/watch?v=v0eR5lnYuqU"
         }
       ]
     }
@@ -199,92 +238,112 @@
       "electro": [
         {
           "artist": "Gigi D'Agostino",
-          "song": "L'Amour Toujours"
+          "song": "L'Amour Toujours",
+          "youtube": "https://www.youtube.com/watch?v=w15oWDh02K4"
         },
         {
           "artist": "Benny Benassi",
-          "song": "Satisfaction"
+          "song": "Satisfaction",
+          "youtube": "https://www.youtube.com/watch?v=0-_bCbCc6lY"
         },
         {
           "artist": "Meduza",
-          "song": "Piece of Your Heart"
+          "song": "Piece of Your Heart",
+          "youtube": "https://www.youtube.com/watch?v=KE2SSftvFU4"
         },
         {
           "artist": "Gabry Ponte",
-          "song": "Geordie"
+          "song": "Geordie",
+          "youtube": "https://www.youtube.com/watch?v=85xlCs-sB7o"
         }
       ],
       "rock": [
         {
           "artist": "Måneskin",
-          "song": "Beggin'"
+          "song": "Beggin'",
+          "youtube": "https://www.youtube.com/watch?v=D557gnClcwc"
         },
         {
           "artist": "Vasco Rossi",
-          "song": "Albachiara"
+          "song": "Albachiara",
+          "youtube": "https://www.youtube.com/watch?v=lN5BVFYjraw"
         },
         {
           "artist": "Zucchero",
-          "song": "Senza una donna"
+          "song": "Senza una donna",
+          "youtube": "https://www.youtube.com/watch?v=V69vs8JmXYM"
         },
         {
           "artist": "Gianna Nannini",
-          "song": "Bello e impossibile"
+          "song": "Bello e impossibile",
+          "youtube": "https://www.youtube.com/watch?v=xoco58gF8h0"
         }
       ],
       "pop": [
         {
           "artist": "Laura Pausini",
-          "song": "La solitudine"
+          "song": "La solitudine",
+          "youtube": "https://www.youtube.com/watch?v=JaglX6XQTLo"
         },
         {
           "artist": "Eros Ramazzotti",
-          "song": "Più bella cosa"
+          "song": "Più bella cosa",
+          "youtube": "https://www.youtube.com/watch?v=UojBaKX5Vz4"
         },
         {
           "artist": "Mahmood",
-          "song": "Soldi"
+          "song": "Soldi",
+          "youtube": "https://www.youtube.com/watch?v=22lISUXgSUw"
         },
         {
           "artist": "Tiziano Ferro",
-          "song": "Perdono"
+          "song": "Perdono",
+          "youtube": "https://www.youtube.com/watch?v=NATTi6tU1ZA"
         }
       ],
       "trad": [
         {
           "artist": "Luciano Pavarotti",
-          "song": "O sole mio"
+          "song": "O sole mio",
+          "youtube": "https://www.youtube.com/watch?v=TM6s_6Wie1w"
         },
         {
           "artist": "Domenico Modugno",
-          "song": "Nel blu dipinto di blu"
+          "song": "Nel blu dipinto di blu",
+          "youtube": "https://www.youtube.com/watch?v=6jWsIpAbo-8"
         },
         {
           "artist": "Andrea Bocelli",
-          "song": "Con te partirò"
+          "song": "Con te partirò",
+          "youtube": "https://www.youtube.com/watch?v=nVUHHW1tJYA"
         },
         {
           "artist": "Musique napolitaine",
           "song": "Tarantella napoletana",
-          "query": "Tarantella napoletana"
+          "query": "Tarantella napoletana",
+          "youtube": "https://www.youtube.com/watch?v=4nduIxmHUI8"
         }
       ],
       "fete": [
         {
           "artist": "Raffaella Carrà",
-          "song": "A far l'amore comincia tu"
+          "song": "A far l'amore comincia tu",
+          "youtube": "https://www.youtube.com/watch?v=YXnUhQ7i7B8"
         },
         {
           "artist": "Righeira",
-          "song": "Vamos a la playa"
+          "song": "Vamos a la playa",
+          "youtube": "https://www.youtube.com/watch?v=x0OMFm8FO90"
         },
         {
           "artist": "Toto Cutugno",
-          "song": "L'Italiano"
+          "song": "L'Italiano",
+          "youtube": "https://www.youtube.com/watch?v=TYtdYslLY9I"
         },
         {
           "artist": "Al Bano & Romina Power",
-          "song": "Felicità"
+          "song": "Felicità",
+          "youtube": "https://www.youtube.com/watch?v=xUj-lfx6vbo"
         }
       ]
     }
@@ -297,84 +356,102 @@
       "electro": [
         {
           "artist": "Tiësto",
-          "song": "The Business"
+          "song": "The Business",
+          "youtube": "https://www.youtube.com/watch?v=nCg3ufihKyU"
         },
         {
           "artist": "Martin Garrix",
-          "song": "Animals"
+          "song": "Animals",
+          "youtube": "https://www.youtube.com/watch?v=IPYTxAHeR_o"
         },
         {
           "artist": "Armin van Buuren",
-          "song": "Blah Blah Blah"
+          "song": "Blah Blah Blah",
+          "youtube": "https://www.youtube.com/watch?v=mfJhMfOPWdE"
         },
         {
           "artist": "Afrojack",
-          "song": "Take Over Control"
+          "song": "Take Over Control",
+          "youtube": "https://www.youtube.com/watch?v=rjJCIu9VlgM"
         }
       ],
       "rock": [
         {
           "artist": "Golden Earring",
-          "song": "Radar Love"
+          "song": "Radar Love",
+          "youtube": "https://www.youtube.com/watch?v=I8X3BAwfwag"
         },
         {
           "artist": "Shocking Blue",
-          "song": "Venus"
+          "song": "Venus",
+          "youtube": "https://www.youtube.com/watch?v=ghDbKqtuHng"
         },
         {
           "artist": "Within Temptation",
-          "song": "Ice Queen"
+          "song": "Ice Queen",
+          "youtube": "https://www.youtube.com/watch?v=WiiHyFm_Hhw"
         },
         {
           "artist": "Focus",
-          "song": "Hocus Pocus"
+          "song": "Hocus Pocus",
+          "youtube": "https://www.youtube.com/watch?v=XRev94Qo5fY"
         }
       ],
       "pop": [
         {
           "artist": "Duncan Laurence",
-          "song": "Arcade"
+          "song": "Arcade",
+          "youtube": "https://www.youtube.com/watch?v=QPzOeESWG5o"
         },
         {
           "artist": "Anouk",
-          "song": "Nobody's Wife"
+          "song": "Nobody's Wife",
+          "youtube": "https://www.youtube.com/watch?v=3RaHTDNude4"
         },
         {
           "artist": "The Common Linnets",
-          "song": "Calm After the Storm"
+          "song": "Calm After the Storm",
+          "youtube": "https://www.youtube.com/watch?v=6LxkTYmo4Io"
         }
       ],
       "trad": [
         {
           "artist": "André Rieu",
-          "song": "The Second Waltz"
+          "song": "The Second Waltz",
+          "youtube": "https://www.youtube.com/watch?v=fd16sNr9T2Q"
         },
         {
           "artist": "Johnny Jordaan",
-          "song": "Geef mij maar Amsterdam"
+          "song": "Geef mij maar Amsterdam",
+          "youtube": "https://www.youtube.com/watch?v=QYwLlusPJRM"
         },
         {
           "artist": "Chanson populaire",
           "song": "Tulpen uit Amsterdam",
-          "query": "Tulpen uit Amsterdam"
+          "query": "Tulpen uit Amsterdam",
+          "youtube": "https://www.youtube.com/watch?v=aI-Yw-kpO-A"
         }
       ],
       "fete": [
         {
           "artist": "Vengaboys",
-          "song": "We Like to Party!"
+          "song": "We Like to Party!",
+          "youtube": "https://www.youtube.com/watch?v=6Zbi0XmGtMw"
         },
         {
           "artist": "2 Unlimited",
-          "song": "No Limit"
+          "song": "No Limit",
+          "youtube": "https://www.youtube.com/watch?v=r6FVk2k4qsM"
         },
         {
           "artist": "Snollebollekes",
-          "song": "Links rechts"
+          "song": "Links rechts",
+          "youtube": "https://www.youtube.com/watch?v=pFEDBewcfks"
         },
         {
           "artist": "Joost",
-          "song": "Europapa"
+          "song": "Europapa",
+          "youtube": "https://www.youtube.com/watch?v=gT2wY0DjYGo"
         }
       ]
     }
@@ -387,90 +464,109 @@
       "electro": [
         {
           "artist": "Alan Walker",
-          "song": "Faded"
+          "song": "Faded",
+          "youtube": "https://www.youtube.com/watch?v=60ItHLz5WEA"
         },
         {
           "artist": "Fatboy Slim",
-          "song": "Right Here, Right Now"
+          "song": "Right Here, Right Now",
+          "youtube": "https://www.youtube.com/watch?v=ub747pprmJ8"
         },
         {
           "artist": "Jonas Blue",
-          "song": "Fast Car"
+          "song": "Fast Car",
+          "youtube": "https://www.youtube.com/watch?v=5yXQJBU8A28"
         },
         {
           "artist": "Joel Corry",
-          "song": "Head & Heart"
+          "song": "Head & Heart",
+          "youtube": "https://www.youtube.com/watch?v=CRuOOxF-ENQ"
         }
       ],
       "rock": [
         {
           "artist": "Queen",
-          "song": "Bohemian Rhapsody"
+          "song": "Bohemian Rhapsody",
+          "youtube": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
         },
         {
           "artist": "The Beatles",
-          "song": "Hey Jude"
+          "song": "Hey Jude",
+          "youtube": "https://www.youtube.com/watch?v=uNv_Bu_L6C8"
         },
         {
           "artist": "The Rolling Stones",
-          "song": "Paint It, Black"
+          "song": "Paint It, Black",
+          "youtube": "https://www.youtube.com/watch?v=O4irXQhgMqg"
         },
         {
           "artist": "Led Zeppelin",
-          "song": "Stairway to Heaven"
+          "song": "Stairway to Heaven",
+          "youtube": "https://www.youtube.com/watch?v=UqqKKa9AJK4"
         }
       ],
       "pop": [
         {
           "artist": "Ed Sheeran",
-          "song": "Shape of You"
+          "song": "Shape of You",
+          "youtube": "https://www.youtube.com/watch?v=JGwWNGJdvx8"
         },
         {
           "artist": "Adele",
-          "song": "Rolling in the Deep"
+          "song": "Rolling in the Deep",
+          "youtube": "https://www.youtube.com/watch?v=rYEDA3JcQqw"
         },
         {
           "artist": "Dua Lipa",
-          "song": "Levitating"
+          "song": "Levitating",
+          "youtube": "https://www.youtube.com/watch?v=TUVcZfQe-Kw"
         },
         {
           "artist": "Harry Styles",
-          "song": "As It Was"
+          "song": "As It Was",
+          "youtube": "https://www.youtube.com/watch?v=H5v3kku4y6Q"
         }
       ],
       "trad": [
         {
           "artist": "Ballade anglaise",
           "song": "Greensleeves",
-          "query": "Greensleeves traditional"
+          "query": "Greensleeves traditional",
+          "youtube": "https://www.youtube.com/watch?v=kdjYlrvVFNo"
         },
         {
           "artist": "Ballade anglaise",
           "song": "Scarborough Fair",
-          "query": "Scarborough Fair traditional folk"
+          "query": "Scarborough Fair traditional folk",
+          "youtube": "https://www.youtube.com/watch?v=xUoJUWViTGU"
         },
         {
           "artist": "Hymne anglais",
           "song": "Jerusalem",
-          "query": "Jerusalem hymn Parry"
+          "query": "Jerusalem hymn Parry",
+          "youtube": "https://www.youtube.com/watch?v=Qn2UDrmASqs"
         }
       ],
       "fete": [
         {
           "artist": "Spice Girls",
-          "song": "Wannabe"
+          "song": "Wannabe",
+          "youtube": "https://www.youtube.com/watch?v=gJLIiF15wjQ"
         },
         {
           "artist": "Wham!",
-          "song": "Wake Me Up Before You Go-Go"
+          "song": "Wake Me Up Before You Go-Go",
+          "youtube": "https://www.youtube.com/watch?v=pIgZ7gMze7A"
         },
         {
           "artist": "Chumbawamba",
-          "song": "Tubthumping"
+          "song": "Tubthumping",
+          "youtube": "https://www.youtube.com/watch?v=cdznl6wUItc"
         },
         {
           "artist": "Elton John",
-          "song": "I'm Still Standing"
+          "song": "I'm Still Standing",
+          "youtube": "https://www.youtube.com/watch?v=MDPLNNYVvOA"
         }
       ]
     }
@@ -483,89 +579,108 @@
       "electro": [
         {
           "artist": "Avicii",
-          "song": "Wake Me Up"
+          "song": "Wake Me Up",
+          "youtube": "https://www.youtube.com/watch?v=IcrbM1l_BoI"
         },
         {
           "artist": "Swedish House Mafia",
-          "song": "Don't You Worry Child"
+          "song": "Don't You Worry Child",
+          "youtube": "https://www.youtube.com/watch?v=vRqbSgp8w38"
         },
         {
           "artist": "Kygo",
-          "song": "Firestone"
+          "song": "Firestone",
+          "youtube": "https://www.youtube.com/watch?v=9Sc-ir2UwGU"
         },
         {
           "artist": "Eric Prydz",
-          "song": "Call On Me"
+          "song": "Call On Me",
+          "youtube": "https://www.youtube.com/watch?v=YRjtvGwVO_M"
         }
       ],
       "rock": [
         {
           "artist": "Europe",
-          "song": "The Final Countdown"
+          "song": "The Final Countdown",
+          "youtube": "https://www.youtube.com/watch?v=9jK-NcRmVcw"
         },
         {
           "artist": "The Hives",
-          "song": "Hate to Say I Told You So"
+          "song": "Hate to Say I Told You So",
+          "youtube": "https://www.youtube.com/watch?v=Uz1Jwyxd4tE"
         },
         {
           "artist": "Volbeat",
-          "song": "Still Counting"
+          "song": "Still Counting",
+          "youtube": "https://www.youtube.com/watch?v=93u7XVjNS7o"
         },
         {
           "artist": "Ghost",
-          "song": "Mary on a Cross"
+          "song": "Mary on a Cross",
+          "youtube": "https://www.youtube.com/watch?v=k5mX3NkA7jM"
         }
       ],
       "pop": [
         {
           "artist": "ABBA",
-          "song": "Dancing Queen"
+          "song": "Dancing Queen",
+          "youtube": "https://www.youtube.com/watch?v=xFrGuyw1V8s"
         },
         {
           "artist": "a-ha",
-          "song": "Take On Me"
+          "song": "Take On Me",
+          "youtube": "https://www.youtube.com/watch?v=djV11Xbc914"
         },
         {
           "artist": "Roxette",
-          "song": "It Must Have Been Love"
+          "song": "It Must Have Been Love",
+          "youtube": "https://www.youtube.com/watch?v=k2C5TjS2sh4"
         },
         {
           "artist": "Zara Larsson",
-          "song": "Lush Life"
+          "song": "Lush Life",
+          "youtube": "https://www.youtube.com/watch?v=tD4HCZe-tew"
         }
       ],
       "trad": [
         {
           "artist": "Edvard Grieg",
           "song": "Dans l'antre du roi de la montagne",
-          "query": "Grieg In the Hall of the Mountain King"
+          "query": "Grieg In the Hall of the Mountain King",
+          "youtube": "https://www.youtube.com/watch?v=yEWFxNNjalI"
         },
         {
           "artist": "Wardruna",
-          "song": "Helvegen"
+          "song": "Helvegen",
+          "youtube": "https://www.youtube.com/watch?v=1iR5i2aXn_s"
         },
         {
           "artist": "Chant de la Saint-Jean",
           "song": "Små grodorna",
-          "query": "Små grodorna midsommar"
+          "query": "Små grodorna midsommar",
+          "youtube": "https://www.youtube.com/watch?v=yZhBpuHwLzw"
         }
       ],
       "fete": [
         {
           "artist": "Aqua",
-          "song": "Barbie Girl"
+          "song": "Barbie Girl",
+          "youtube": "https://www.youtube.com/watch?v=ZyhrYis509A"
         },
         {
           "artist": "Rednex",
-          "song": "Cotton Eye Joe"
+          "song": "Cotton Eye Joe",
+          "youtube": "https://www.youtube.com/watch?v=mOYZaiDZ7BM"
         },
         {
           "artist": "Basshunter",
-          "song": "Now You're Gone"
+          "song": "Now You're Gone",
+          "youtube": "https://www.youtube.com/watch?v=V2M5EarooCI"
         },
         {
           "artist": "Ylvis",
-          "song": "The Fox"
+          "song": "The Fox",
+          "youtube": "https://www.youtube.com/watch?v=DJc5szH7KNU"
         }
       ]
     }
@@ -578,77 +693,93 @@
       "electro": [
         {
           "artist": "DJ Antoine",
-          "song": "Ma Chérie"
+          "song": "Ma Chérie",
+          "youtube": "https://www.youtube.com/watch?v=LsNBU5wDzsI"
         },
         {
           "artist": "Yves Larock",
-          "song": "Rise Up"
+          "song": "Rise Up",
+          "youtube": "https://www.youtube.com/watch?v=9dmKPc7GwOY"
         },
         {
           "artist": "Remady",
-          "song": "No Superstar"
+          "song": "No Superstar",
+          "youtube": "https://www.youtube.com/watch?v=ePXFzjzFFCQ"
         },
         {
           "artist": "Mike Candys",
-          "song": "One Night in Ibiza"
+          "song": "One Night in Ibiza",
+          "youtube": "https://www.youtube.com/watch?v=57gFrnDEWXU"
         }
       ],
       "rock": [
         {
           "artist": "Gotthard",
-          "song": "Heaven"
+          "song": "Heaven",
+          "youtube": "https://www.youtube.com/watch?v=apP448jksho"
         },
         {
           "artist": "Krokus",
-          "song": "Long Stick Goes Boom"
+          "song": "Long Stick Goes Boom",
+          "youtube": "https://www.youtube.com/watch?v=l2iL2A0_zg4"
         },
         {
           "artist": "Züri West",
-          "song": "I schänke dir mis Härz"
+          "song": "I schänke dir mis Härz",
+          "youtube": "https://www.youtube.com/watch?v=2KqW8oiBXy0"
         }
       ],
       "pop": [
         {
           "artist": "Nemo",
-          "song": "The Code"
+          "song": "The Code",
+          "youtube": "https://www.youtube.com/watch?v=RnVVTxSDzAA"
         },
         {
           "artist": "Luca Hänni",
-          "song": "She Got Me"
+          "song": "She Got Me",
+          "youtube": "https://www.youtube.com/watch?v=GdSmDZckaAw"
         },
         {
           "artist": "Stefanie Heinzmann",
-          "song": "My Man Is a Mean Man"
+          "song": "My Man Is a Mean Man",
+          "youtube": "https://www.youtube.com/watch?v=b8en_gr5X_s"
         }
       ],
       "trad": [
         {
           "artist": "Ruedi Rymann",
-          "song": "Dr Schacher Seppli"
+          "song": "Dr Schacher Seppli",
+          "youtube": "https://www.youtube.com/watch?v=hiNkQvV26H4"
         },
         {
           "artist": "Chant populaire",
           "song": "Vreneli ab em Guggisberg",
-          "query": "Vreneli ab em Guggisberg"
+          "query": "Vreneli ab em Guggisberg",
+          "youtube": "https://www.youtube.com/watch?v=YZu6CCcpCSw"
         },
         {
           "artist": "Cor des Alpes",
           "song": "Alphorn",
-          "query": "Alphorn Schweiz Alphornbläser"
+          "query": "Alphorn Schweiz Alphornbläser",
+          "youtube": "https://www.youtube.com/watch?v=K_qp26NHyTg"
         }
       ],
       "fete": [
         {
           "artist": "DJ BoBo",
-          "song": "Chihuahua"
+          "song": "Chihuahua",
+          "youtube": "https://www.youtube.com/watch?v=G7QME0bzZuA"
         },
         {
           "artist": "Yello",
-          "song": "Oh Yeah"
+          "song": "Oh Yeah",
+          "youtube": "https://www.youtube.com/watch?v=6jJkdRaa04g"
         },
         {
           "artist": "Baschi",
-          "song": "Bring en hei"
+          "song": "Bring en hei",
+          "youtube": "https://www.youtube.com/watch?v=Y52dZ1xjRiI"
         }
       ]
     }
@@ -665,80 +796,97 @@
         },
         {
           "artist": "Klangkarussell",
-          "song": "Sonnentanz"
+          "song": "Sonnentanz",
+          "youtube": "https://www.youtube.com/watch?v=79YDgv_zWA4"
         },
         {
           "artist": "LUM!X",
-          "song": "Monster"
+          "song": "Monster",
+          "youtube": "https://www.youtube.com/watch?v=VWNFj9rm6tc"
         },
         {
           "artist": "DJ Ötzi",
-          "song": "Hey Baby"
+          "song": "Hey Baby",
+          "youtube": "https://www.youtube.com/watch?v=CmhNw9ohGq8"
         }
       ],
       "rock": [
         {
           "artist": "Opus",
-          "song": "Live Is Life"
+          "song": "Live Is Life",
+          "youtube": "https://www.youtube.com/watch?v=pATX-lV0VFk"
         },
         {
           "artist": "Wanda",
-          "song": "Bologna"
+          "song": "Bologna",
+          "youtube": "https://www.youtube.com/watch?v=J4xLGK9CM74"
         },
         {
           "artist": "STS",
-          "song": "Fürstenfeld"
+          "song": "Fürstenfeld",
+          "youtube": "https://www.youtube.com/watch?v=XVMTnv6SmWc"
         },
         {
           "artist": "Bilderbuch",
-          "song": "Maschin"
+          "song": "Maschin",
+          "youtube": "https://www.youtube.com/watch?v=9Ocyk0OgyWY"
         }
       ],
       "pop": [
         {
           "artist": "Falco",
-          "song": "Rock Me Amadeus"
+          "song": "Rock Me Amadeus",
+          "youtube": "https://www.youtube.com/watch?v=cVikZ8Oe_XA"
         },
         {
           "artist": "Conchita Wurst",
-          "song": "Rise Like a Phoenix"
+          "song": "Rise Like a Phoenix",
+          "youtube": "https://www.youtube.com/watch?v=L4qZBGRV6zg"
         },
         {
           "artist": "Christina Stürmer",
-          "song": "Ich lebe"
+          "song": "Ich lebe",
+          "youtube": "https://www.youtube.com/watch?v=y1Nbv6Xv1Bw"
         },
         {
           "artist": "Cesár Sampson",
-          "song": "Nobody But You"
+          "song": "Nobody But You",
+          "youtube": "https://www.youtube.com/watch?v=lbbNF8DMHrw"
         }
       ],
       "trad": [
         {
           "artist": "Johann Strauss II",
-          "song": "An der schönen blauen Donau"
+          "song": "An der schönen blauen Donau",
+          "youtube": "https://www.youtube.com/watch?v=KQvNTi-h-3c"
         },
         {
           "artist": "Johann Strauss I",
-          "song": "Radetzky-Marsch"
+          "song": "Radetzky-Marsch",
+          "youtube": "https://www.youtube.com/watch?v=MsoAK2QyhzE"
         },
         {
           "artist": "Chant tyrolien",
           "song": "Kufsteinlied",
-          "query": "Kufsteinlied"
+          "query": "Kufsteinlied",
+          "youtube": "https://www.youtube.com/watch?v=Ua4lMtVnI08"
         }
       ],
       "fete": [
         {
           "artist": "DJ Ötzi",
-          "song": "Anton aus Tirol"
+          "song": "Anton aus Tirol",
+          "youtube": "https://www.youtube.com/watch?v=bdu1iUgM5c8"
         },
         {
           "artist": "Zillertaler Schürzenjäger",
-          "song": "Sierra Madre"
+          "song": "Sierra Madre",
+          "youtube": "https://www.youtube.com/watch?v=PbkVxBTnHf0"
         },
         {
           "artist": "EAV",
-          "song": "Ba-Ba-Banküberfall"
+          "song": "Ba-Ba-Banküberfall",
+          "youtube": "https://www.youtube.com/watch?v=XldO-djblTc"
         }
       ]
     }
@@ -751,81 +899,98 @@
       "electro": [
         {
           "artist": "Sak Noel",
-          "song": "Loca People"
+          "song": "Loca People",
+          "youtube": "https://www.youtube.com/watch?v=dh3N_UoSy5A"
         },
         {
           "artist": "Juan Magán",
-          "song": "Bailando Por Ahí"
+          "song": "Bailando Por Ahí",
+          "youtube": "https://www.youtube.com/watch?v=9m6ogS57sc8"
         },
         {
           "artist": "Javi Mula",
-          "song": "Come On"
+          "song": "Come On",
+          "youtube": "https://www.youtube.com/watch?v=tu25FZntDpo"
         }
       ],
       "rock": [
         {
           "artist": "Héroes del Silencio",
-          "song": "Entre dos tierras"
+          "song": "Entre dos tierras",
+          "youtube": "https://www.youtube.com/watch?v=SzimletXB7M"
         },
         {
           "artist": "Extremoduro",
-          "song": "So payaso"
+          "song": "So payaso",
+          "youtube": "https://www.youtube.com/watch?v=1D3tSv9LQlE"
         },
         {
           "artist": "Mägo de Oz",
-          "song": "Fiesta pagana"
+          "song": "Fiesta pagana",
+          "youtube": "https://www.youtube.com/watch?v=zZPvME8H2Oo"
         }
       ],
       "pop": [
         {
           "artist": "Enrique Iglesias",
-          "song": "Bailando"
+          "song": "Bailando",
+          "youtube": "https://www.youtube.com/watch?v=NUsoVlDFqZg"
         },
         {
           "artist": "Rosalía",
-          "song": "Despechá"
+          "song": "Despechá",
+          "youtube": "https://www.youtube.com/watch?v=5g2hT4GmAGU"
         },
         {
           "artist": "Alejandro Sanz",
-          "song": "Corazón partío"
+          "song": "Corazón partío",
+          "youtube": "https://www.youtube.com/watch?v=YxFUwGaxKTo"
         },
         {
           "artist": "La Oreja de Van Gogh",
-          "song": "Rosas"
+          "song": "Rosas",
+          "youtube": "https://www.youtube.com/watch?v=nYnLVWXmRm8"
         }
       ],
       "trad": [
         {
           "artist": "Paco de Lucía",
-          "song": "Entre dos aguas"
+          "song": "Entre dos aguas",
+          "youtube": "https://www.youtube.com/watch?v=0vq3qZwaXrw"
         },
         {
           "artist": "Camarón de la Isla",
-          "song": "Volando voy"
+          "song": "Volando voy",
+          "youtube": "https://www.youtube.com/watch?v=fYYngqQfhVY"
         },
         {
           "artist": "Sevillanas",
           "song": "Sevillanas",
-          "query": "sevillanas Ecos del Rocío"
+          "query": "sevillanas Ecos del Rocío",
+          "youtube": "https://www.youtube.com/watch?v=oR2tgYm_DHQ"
         }
       ],
       "fete": [
         {
           "artist": "Los del Río",
-          "song": "Macarena"
+          "song": "Macarena",
+          "youtube": "https://www.youtube.com/watch?v=8BMnz4i2dM8"
         },
         {
           "artist": "Las Ketchup",
-          "song": "Aserejé"
+          "song": "Aserejé",
+          "youtube": "https://www.youtube.com/watch?v=hLeUL4i9PNw"
         },
         {
           "artist": "Paquito el Chocolatero",
           "song": "Paquito el Chocolatero",
-          "query": "Paquito el Chocolatero pasodoble"
+          "query": "Paquito el Chocolatero pasodoble",
+          "youtube": "https://www.youtube.com/watch?v=uDJ0F_TBUtg"
         },
         {
           "artist": "Georgie Dann",
-          "song": "El Chiringuito"
+          "song": "El Chiringuito",
+          "youtube": "https://www.youtube.com/watch?v=CXOR383Q7rY"
         }
       ]
     }
@@ -838,83 +1003,101 @@
       "electro": [
         {
           "artist": "Buraka Som Sistema",
-          "song": "Hangover (BaBaBa)"
+          "song": "Hangover (BaBaBa)",
+          "youtube": "https://www.youtube.com/watch?v=Mk0iKDdc8R0"
         },
         {
           "artist": "Diego Miranda",
-          "song": "Ibiza for Dreams"
+          "song": "Ibiza for Dreams",
+          "youtube": "https://www.youtube.com/watch?v=LTl1R6Jndos"
         },
         {
           "artist": "Mastiksoul",
-          "song": "Taking Over Me"
+          "song": "Taking Over Me",
+          "youtube": "https://www.youtube.com/watch?v=JvB55DCiZ8M"
         },
         {
           "artist": "Kura",
-          "song": ""
+          "song": "",
+          "youtube": "https://www.youtube.com/watch?v=DmvQX0AN_MQ"
         }
       ],
       "rock": [
         {
           "artist": "Xutos & Pontapés",
-          "song": "À minha maneira"
+          "song": "À minha maneira",
+          "youtube": "https://www.youtube.com/watch?v=X-3WfB-Gc9k"
         },
         {
           "artist": "Moonspell",
-          "song": "Full Moon Madness"
+          "song": "Full Moon Madness",
+          "youtube": "https://www.youtube.com/watch?v=TOTciTjR9Uo"
         },
         {
           "artist": "GNR",
-          "song": "Dunas"
+          "song": "Dunas",
+          "youtube": "https://www.youtube.com/watch?v=IETRtgZU_ig"
         }
       ],
       "pop": [
         {
           "artist": "Salvador Sobral",
-          "song": "Amar pelos dois"
+          "song": "Amar pelos dois",
+          "youtube": "https://www.youtube.com/watch?v=1AoCLJvl5vU"
         },
         {
           "artist": "Diogo Piçarra",
-          "song": "Já não falamos"
+          "song": "Já não falamos",
+          "youtube": "https://www.youtube.com/watch?v=4qbOINGFfNs"
         },
         {
           "artist": "Carolina Deslandes",
-          "song": "A Vida Toda"
+          "song": "A Vida Toda",
+          "youtube": "https://www.youtube.com/watch?v=75iqd2yJH6w"
         }
       ],
       "trad": [
         {
           "artist": "Amália Rodrigues",
-          "song": "Barco Negro"
+          "song": "Barco Negro",
+          "youtube": "https://www.youtube.com/watch?v=DVFOUMJXdU8"
         },
         {
           "artist": "Mariza",
-          "song": "Ó Gente da Minha Terra"
+          "song": "Ó Gente da Minha Terra",
+          "youtube": "https://www.youtube.com/watch?v=zFbkBh6oKmU"
         },
         {
           "artist": "Ana Moura",
-          "song": "Desfado"
+          "song": "Desfado",
+          "youtube": "https://www.youtube.com/watch?v=TZurR7xGk4c"
         },
         {
           "artist": "Madredeus",
-          "song": "O Pastor"
+          "song": "O Pastor",
+          "youtube": "https://www.youtube.com/watch?v=Dt1jMWVvcqg"
         }
       ],
       "fete": [
         {
           "artist": "Quim Barreiros",
-          "song": "Bacalhau à portuguesa"
+          "song": "Bacalhau à portuguesa",
+          "youtube": "https://www.youtube.com/watch?v=KgXo09BWlbg"
         },
         {
           "artist": "Buraka Som Sistema",
-          "song": "Kalemba (Wegue Wegue)"
+          "song": "Kalemba (Wegue Wegue)",
+          "youtube": "https://www.youtube.com/watch?v=OpYR7ilLbfo"
         },
         {
           "artist": "Ana Malhoa",
-          "song": "Turbinada"
+          "song": "Turbinada",
+          "youtube": "https://www.youtube.com/watch?v=BmmVl9tTQm8"
         },
         {
           "artist": "Emanuel",
-          "song": "Pimba Pimba"
+          "song": "Pimba Pimba",
+          "youtube": "https://www.youtube.com/watch?v=ClN7yfTbfGM"
         }
       ]
     }
@@ -927,82 +1110,99 @@
       "electro": [
         {
           "artist": "Zedd",
-          "song": "The Middle"
+          "song": "The Middle",
+          "youtube": "https://www.youtube.com/watch?v=M3mJkSqZbX4"
         },
         {
           "artist": "Arty",
-          "song": "Sunrise"
+          "song": "Sunrise",
+          "youtube": "https://www.youtube.com/watch?v=jd7k9SCrLEc"
         },
         {
           "artist": "Filatov & Karas",
-          "song": "Tell It to My Heart"
+          "song": "Tell It to My Heart",
+          "youtube": "https://www.youtube.com/watch?v=g8a4Tr8Tx5Q"
         },
         {
           "artist": "Nina Kraviz",
-          "song": "Ghetto Kraviz"
+          "song": "Ghetto Kraviz",
+          "youtube": "https://www.youtube.com/watch?v=605bwlAz_iQ"
         }
       ],
       "rock": [
         {
           "artist": "Kino",
-          "song": "Gruppa krovi"
+          "song": "Gruppa krovi",
+          "youtube": "https://www.youtube.com/watch?v=Ncfm6Fphhlo"
         },
         {
           "artist": "DDT",
-          "song": "Chto takoye osen'"
+          "song": "Chto takoye osen'",
+          "youtube": "https://www.youtube.com/watch?v=a7IuL_mxoho"
         },
         {
           "artist": "Mumiy Troll",
-          "song": "Vladivostok 2000"
+          "song": "Vladivostok 2000",
+          "youtube": "https://www.youtube.com/watch?v=TuGx064JcvY"
         }
       ],
       "pop": [
         {
           "artist": "t.A.T.u.",
-          "song": "All the Things She Said"
+          "song": "All the Things She Said",
+          "youtube": "https://www.youtube.com/watch?v=8mGBaXPlri8"
         },
         {
           "artist": "Dima Bilan",
-          "song": "Believe"
+          "song": "Believe",
+          "youtube": "https://www.youtube.com/watch?v=uE9oiDOsEmU"
         },
         {
           "artist": "Alla Pugacheva",
-          "song": "Million Alykh Roz"
+          "song": "Million Alykh Roz",
+          "youtube": "https://www.youtube.com/watch?v=BQV0TrlB0gA"
         },
         {
           "artist": "Polina Gagarina",
-          "song": "A Million Voices"
+          "song": "A Million Voices",
+          "youtube": "https://www.youtube.com/watch?v=jBVY7Glcd84"
         }
       ],
       "trad": [
         {
           "artist": "Chant populaire russe",
           "song": "Kalinka",
-          "query": "Kalinka chant russe"
+          "query": "Kalinka chant russe",
+          "youtube": "https://www.youtube.com/watch?v=a3aXHqrvG04"
         },
         {
           "artist": "Chant populaire russe",
           "song": "Katioucha",
-          "query": "Katyusha song"
+          "query": "Katyusha song",
+          "youtube": "https://www.youtube.com/watch?v=4E_3lfS3HTo"
         },
         {
           "artist": "Chant populaire russe",
           "song": "Korobeïniki",
-          "query": "Korobeiniki folk song"
+          "query": "Korobeiniki folk song",
+          "youtube": "https://www.youtube.com/watch?v=E__Q4mmPKLY"
         }
       ],
       "fete": [
         {
           "artist": "Little Big",
-          "song": "Skibidi"
+          "song": "Skibidi",
+          "youtube": "https://www.youtube.com/watch?v=mDFBTdToRmw"
         },
         {
           "artist": "Ruki Vverh",
-          "song": "Kroshka moya"
+          "song": "Kroshka moya",
+          "youtube": "https://www.youtube.com/watch?v=7KOLaoLYO7Y"
         },
         {
           "artist": "Leningrad",
-          "song": "Exhibit"
+          "song": "Exhibit",
+          "youtube": "https://www.youtube.com/watch?v=et281UHNoOU"
         }
       ]
     }
@@ -1015,73 +1215,88 @@
       "electro": [
         {
           "artist": "Playmen",
-          "song": "Fallin'"
+          "song": "Fallin'",
+          "youtube": "https://www.youtube.com/watch?v=m8Am9gfAzQM"
         },
         {
           "artist": "Claydee",
-          "song": "Mamacita Buena"
+          "song": "Mamacita Buena",
+          "youtube": "https://www.youtube.com/watch?v=AbVzvy7h11M"
         },
         {
           "artist": "Vangelis",
-          "song": "Chariots of Fire"
+          "song": "Chariots of Fire",
+          "youtube": "https://www.youtube.com/watch?v=8a-HfNE3EIo"
         }
       ],
       "rock": [
         {
           "artist": "Aphrodite's Child",
-          "song": "Rain and Tears"
+          "song": "Rain and Tears",
+          "youtube": "https://www.youtube.com/watch?v=2I7QG12ojg0"
         },
         {
           "artist": "Rotting Christ",
-          "song": "Non Serviam"
+          "song": "Non Serviam",
+          "youtube": "https://www.youtube.com/watch?v=F4-9c_rcK1M"
         },
         {
           "artist": "Septicflesh",
-          "song": "Anubis"
+          "song": "Anubis",
+          "youtube": "https://www.youtube.com/watch?v=4L5qpMRmqOg"
         }
       ],
       "pop": [
         {
           "artist": "Nana Mouskouri",
-          "song": "Plaisir d'amour"
+          "song": "Plaisir d'amour",
+          "youtube": "https://www.youtube.com/watch?v=6KdaBxuB6s0"
         },
         {
           "artist": "Sakis Rouvas",
-          "song": "Shake It"
+          "song": "Shake It",
+          "youtube": "https://www.youtube.com/watch?v=eOUVAskQaiw"
         },
         {
           "artist": "Marina Satti",
-          "song": "Zari"
+          "song": "Zari",
+          "youtube": "https://www.youtube.com/watch?v=mTSTnLWGUPs"
         }
       ],
       "trad": [
         {
           "artist": "Mikis Theodorakis",
           "song": "Zorba le Grec (Sirtaki)",
-          "query": "Theodorakis Zorba the Greek sirtaki"
+          "query": "Theodorakis Zorba the Greek sirtaki",
+          "youtube": "https://www.youtube.com/watch?v=lE4xjI1oHwo"
         },
         {
           "artist": "Manos Hadjidakis",
-          "song": "Ta paidia tou Peiraia"
+          "song": "Ta paidia tou Peiraia",
+          "youtube": "https://www.youtube.com/watch?v=MiUprK43mJY"
         },
         {
           "artist": "Rebetiko",
           "song": "Misirlou",
-          "query": "Misirlou rebetiko traditional"
+          "query": "Misirlou rebetiko traditional",
+          "youtube": "https://www.youtube.com/watch?v=vw937I4uXYQ"
         }
       ],
       "fete": [
         {
           "artist": "Giorgos Alkaios",
-          "song": "OPA"
+          "song": "OPA",
+          "youtube": "https://www.youtube.com/watch?v=bmeCC53FKes"
         },
         {
           "artist": "Claydee",
-          "song": "Mamacita Buena"
+          "song": "Mamacita Buena",
+          "youtube": "https://www.youtube.com/watch?v=AbVzvy7h11M"
         },
         {
           "artist": "Marina Satti",
-          "song": "Mantissa"
+          "song": "Mantissa",
+          "youtube": "https://www.youtube.com/watch?v=428EWSBwEmI"
         }
       ]
     }
@@ -1094,79 +1309,95 @@
       "electro": [
         {
           "artist": "GusGus",
-          "song": "Over"
+          "song": "Over",
+          "youtube": "https://www.youtube.com/watch?v=ydstajr-MvY"
         },
         {
           "artist": "Kiasmos",
-          "song": "Blurred"
+          "song": "Blurred",
+          "youtube": "https://www.youtube.com/watch?v=thI-q34zb-I"
         },
         {
           "artist": "Hatari",
-          "song": "Hatrið mun sigra"
+          "song": "Hatrið mun sigra",
+          "youtube": "https://www.youtube.com/watch?v=uC4sUYvdMYY"
         }
       ],
       "rock": [
         {
           "artist": "Of Monsters and Men",
-          "song": "Little Talks"
+          "song": "Little Talks",
+          "youtube": "https://www.youtube.com/watch?v=_adqP8Ks4iU"
         },
         {
           "artist": "Sigur Rós",
-          "song": "Hoppípolla"
+          "song": "Hoppípolla",
+          "youtube": "https://www.youtube.com/watch?v=JAYb8ZyjzD0"
         },
         {
           "artist": "Kaleo",
-          "song": "Way Down We Go"
+          "song": "Way Down We Go",
+          "youtube": "https://www.youtube.com/watch?v=0-7IHOXkiV8"
         },
         {
           "artist": "The Sugarcubes",
-          "song": "Birthday"
+          "song": "Birthday",
+          "youtube": "https://www.youtube.com/watch?v=_o3HXW-cXaU"
         }
       ],
       "pop": [
         {
           "artist": "Björk",
-          "song": "It's Oh So Quiet"
+          "song": "It's Oh So Quiet",
+          "youtube": "https://www.youtube.com/watch?v=htobTBlCvUU"
         },
         {
           "artist": "Laufey",
-          "song": "From the Start"
+          "song": "From the Start",
+          "youtube": "https://www.youtube.com/watch?v=lSD_L-xic9o"
         },
         {
           "artist": "Ásgeir",
-          "song": "King and Cross"
+          "song": "King and Cross",
+          "youtube": "https://www.youtube.com/watch?v=D-dHIkF_lO4"
         }
       ],
       "trad": [
         {
           "artist": "Chant islandais",
           "song": "Heyr himna smiður",
-          "query": "Heyr himna smiður"
+          "query": "Heyr himna smiður",
+          "youtube": "https://www.youtube.com/watch?v=-W8vqI4erpQ"
         },
         {
           "artist": "Chant islandais",
           "song": "Á Sprengisandi",
-          "query": "Á Sprengisandi"
+          "query": "Á Sprengisandi",
+          "youtube": "https://www.youtube.com/watch?v=fs599xDW0cM"
         },
         {
           "artist": "Chant islandais",
           "song": "Krummavísur",
-          "query": "Krummavísur"
+          "query": "Krummavísur",
+          "youtube": "https://www.youtube.com/watch?v=IkCmpps9Vrk"
         }
       ],
       "fete": [
         {
           "artist": "Daði Freyr",
-          "song": "Think About Things"
+          "song": "Think About Things",
+          "youtube": "https://www.youtube.com/watch?v=VFZNvj-HfBU"
         },
         {
           "artist": "Páll Óskar",
-          "song": "Allt fyrir ástina"
+          "song": "Allt fyrir ástina",
+          "youtube": "https://www.youtube.com/watch?v=FKsmCnVVQvs"
         },
         {
           "artist": "Supporters islandais",
           "song": "Clapping viking",
-          "query": "Iceland viking thunder clap Euro 2016"
+          "query": "Iceland viking thunder clap Euro 2016",
+          "youtube": "https://www.youtube.com/watch?v=S8H-a8HTQL8"
         }
       ]
     }
@@ -1179,79 +1410,96 @@
       "electro": [
         {
           "artist": "Shane Codd",
-          "song": "Get Out My Head"
+          "song": "Get Out My Head",
+          "youtube": "https://www.youtube.com/watch?v=10ZxWboO5gM"
         },
         {
           "artist": "Belters Only",
-          "song": "Make Me Feel Good"
+          "song": "Make Me Feel Good",
+          "youtube": "https://www.youtube.com/watch?v=y_k0giroxpU"
         },
         {
           "artist": "Kettama",
-          "song": ""
+          "song": "",
+          "youtube": "https://www.youtube.com/watch?v=4wUv--haykg"
         }
       ],
       "rock": [
         {
           "artist": "U2",
-          "song": "With or Without You"
+          "song": "With or Without You",
+          "youtube": "https://www.youtube.com/watch?v=ujNeHIo7oTE"
         },
         {
           "artist": "The Cranberries",
-          "song": "Zombie"
+          "song": "Zombie",
+          "youtube": "https://www.youtube.com/watch?v=6Ejga4kJUts"
         },
         {
           "artist": "Thin Lizzy",
-          "song": "Whiskey in the Jar"
+          "song": "Whiskey in the Jar",
+          "youtube": "https://www.youtube.com/watch?v=b3UOe5LF_bw"
         }
       ],
       "pop": [
         {
           "artist": "Hozier",
-          "song": "Take Me to Church"
+          "song": "Take Me to Church",
+          "youtube": "https://www.youtube.com/watch?v=PVjiKRfKpPI"
         },
         {
           "artist": "Sinéad O'Connor",
-          "song": "Nothing Compares 2 U"
+          "song": "Nothing Compares 2 U",
+          "youtube": "https://www.youtube.com/watch?v=0-EF60neguk"
         },
         {
           "artist": "Westlife",
-          "song": "Swear It Again"
+          "song": "Swear It Again",
+          "youtube": "https://www.youtube.com/watch?v=0UaMsIJ4bR0"
         },
         {
           "artist": "Niall Horan",
-          "song": "Slow Hands"
+          "song": "Slow Hands",
+          "youtube": "https://www.youtube.com/watch?v=o5FzCz8NC58"
         }
       ],
       "trad": [
         {
           "artist": "The Dubliners",
-          "song": "The Wild Rover"
+          "song": "The Wild Rover",
+          "youtube": "https://www.youtube.com/watch?v=oDgyPD-HCsw"
         },
         {
           "artist": "Enya",
-          "song": "Only Time"
+          "song": "Only Time",
+          "youtube": "https://www.youtube.com/watch?v=7wfYIMyS_dI"
         },
         {
           "artist": "Clannad",
-          "song": "Harry's Game"
+          "song": "Harry's Game",
+          "youtube": "https://www.youtube.com/watch?v=4zHTcxVjX0I"
         },
         {
           "artist": "Bill Whelan",
-          "song": "Riverdance"
+          "song": "Riverdance",
+          "youtube": "https://www.youtube.com/watch?v=igxl7iAl27U"
         }
       ],
       "fete": [
         {
           "artist": "Jedward",
-          "song": "Lipstick"
+          "song": "Lipstick",
+          "youtube": "https://www.youtube.com/watch?v=6x77sOUQhZU"
         },
         {
           "artist": "The Rubberbandits",
-          "song": "Horse Outside"
+          "song": "Horse Outside",
+          "youtube": "https://www.youtube.com/watch?v=FPPLuxaiJQY"
         },
         {
           "artist": "Westlife",
-          "song": "Uptown Girl"
+          "song": "Uptown Girl",
+          "youtube": "https://www.youtube.com/watch?v=0HTexqxo1og"
         }
       ]
     }
@@ -1264,27 +1512,32 @@
       "electro": [
         {
           "artist": "Packo Gualandris",
-          "song": ""
+          "song": "",
+          "youtube": "https://www.youtube.com/watch?v=iLAuCzdfKnE"
         },
         {
           "artist": "Max Noesen",
-          "song": "Obverse"
+          "song": "Obverse",
+          "youtube": "https://www.youtube.com/watch?v=v6ezcZNotrY"
         },
         {
           "artist": "DAMA DJ Luxembourg",
-          "song": ""
+          "song": "",
+          "youtube": "https://www.youtube.com/watch?v=60N_mV9X7Hc"
         }
       ],
       "trad": [
         {
           "artist": "Chant luxembourgeois",
           "song": "De Feierwon",
-          "query": "De Feierwon Luxembourg"
+          "query": "De Feierwon Luxembourg",
+          "youtube": "https://www.youtube.com/watch?v=IFs-8Nv_2qY"
         },
         {
           "artist": "Hymne luxembourgeois",
           "song": "Ons Heemecht",
-          "query": "Ons Heemecht"
+          "query": "Ons Heemecht",
+          "youtube": "https://www.youtube.com/watch?v=LZuozNHArQ0"
         }
       ]
     }
@@ -1297,71 +1550,86 @@
       "electro": [
         {
           "artist": "Matroda",
-          "song": "4u"
+          "song": "4u",
+          "youtube": "https://www.youtube.com/watch?v=cwh1L_F7A7g"
         },
         {
           "artist": "Kosta Radman",
-          "song": "Bellerophon"
+          "song": "Bellerophon",
+          "youtube": "https://www.youtube.com/watch?v=aVO-P12kQA8"
         },
         {
           "artist": "Ivan Mastermix",
-          "song": "Ederlezi"
+          "song": "Ederlezi",
+          "youtube": "https://www.youtube.com/watch?v=zH5Lo7X39qQ"
         }
       ],
       "rock": [
         {
           "artist": "Prljavo Kazalište",
-          "song": "Mojoj majci"
+          "song": "Mojoj majci",
+          "youtube": "https://www.youtube.com/watch?v=18BQF7tjsLM"
         },
         {
           "artist": "Parni Valjak",
-          "song": "Lutka za bal"
+          "song": "Lutka za bal",
+          "youtube": "https://www.youtube.com/watch?v=CDL03EyYLM4"
         },
         {
           "artist": "Hladno Pivo",
-          "song": "Buba švabe"
+          "song": "Buba švabe",
+          "youtube": "https://www.youtube.com/watch?v=y93bW63iY58"
         },
         {
           "artist": "Let 3",
-          "song": "Mama ŠČ!"
+          "song": "Mama ŠČ!",
+          "youtube": "https://www.youtube.com/watch?v=n0MZBxp8rIQ"
         }
       ],
       "pop": [
         {
           "artist": "Doris Dragović",
-          "song": "Marija Magdalena"
+          "song": "Marija Magdalena",
+          "youtube": "https://www.youtube.com/watch?v=V_xPQodZADM"
         },
         {
           "artist": "Gibonni",
-          "song": "Zlatne godine"
+          "song": "Zlatne godine",
+          "youtube": "https://www.youtube.com/watch?v=oPguRrK6-pQ"
         },
         {
           "artist": "Nina Badrić",
-          "song": "Nebo"
+          "song": "Nebo",
+          "youtube": "https://www.youtube.com/watch?v=WzSvjlD0BAM"
         }
       ],
       "trad": [
         {
           "artist": "Klapa Intrade",
-          "song": "Croatio iz duše te ljubim"
+          "song": "Croatio iz duše te ljubim",
+          "youtube": "https://www.youtube.com/watch?v=O9ZkifxFPN0"
         },
         {
           "artist": "Maksim Mrvica",
-          "song": "Croatian Rhapsody"
+          "song": "Croatian Rhapsody",
+          "youtube": "https://www.youtube.com/watch?v=ga2y-nkGbRY"
         },
         {
           "artist": "Zlatni Dukati",
-          "song": ""
+          "song": "",
+          "youtube": "https://www.youtube.com/watch?v=lGMbQeHTTyc"
         }
       ],
       "fete": [
         {
           "artist": "Baby Lasagna",
-          "song": "Rim Tim Tagi Dim"
+          "song": "Rim Tim Tagi Dim",
+          "youtube": "https://www.youtube.com/watch?v=kmg8EAD-Kjw"
         },
         {
           "artist": "Severina",
-          "song": "Moja štikla"
+          "song": "Moja štikla",
+          "youtube": "https://www.youtube.com/watch?v=c7CCyjnEOfs"
         }
       ]
     }
