@@ -3,344 +3,1367 @@
     "id": "de",
     "name": "Allemagne",
     "flag": "🇩🇪",
-    "djs": [
-      {
-        "artist": "Robin Schulz",
-        "song": "Sugar"
-      },
-      {
-        "artist": "Felix Jaehn",
-        "song": "Ain't Nobody (Loves Me Better)"
-      },
-      {
-        "artist": "ATB",
-        "song": "9 PM (Till I Come)"
-      },
-      {
-        "artist": "Paul Kalkbrenner",
-        "song": "Sky and Sand"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Robin Schulz",
+          "song": "Sugar"
+        },
+        {
+          "artist": "Felix Jaehn",
+          "song": "Ain't Nobody (Loves Me Better)"
+        },
+        {
+          "artist": "ATB",
+          "song": "9 PM (Till I Come)"
+        },
+        {
+          "artist": "Paul Kalkbrenner",
+          "song": "Sky and Sand"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Scorpions",
+          "song": "Wind of Change"
+        },
+        {
+          "artist": "Rammstein",
+          "song": "Du hast"
+        },
+        {
+          "artist": "Die Toten Hosen",
+          "song": "Tage wie diese"
+        },
+        {
+          "artist": "Tokio Hotel",
+          "song": "Durch den Monsun"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Nena",
+          "song": "99 Luftballons"
+        },
+        {
+          "artist": "Lena",
+          "song": "Satellite"
+        },
+        {
+          "artist": "Mark Forster",
+          "song": "Chöre"
+        },
+        {
+          "artist": "Kim Petras",
+          "song": "Coconuts"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Heino",
+          "song": "Blau blüht der Enzian"
+        },
+        {
+          "artist": "Chant bavarois",
+          "song": "Ein Prosit",
+          "query": "Ein Prosit der Gemütlichkeit Oktoberfest"
+        },
+        {
+          "artist": "Chant populaire",
+          "song": "Das Wandern ist des Müllers Lust",
+          "query": "Das Wandern ist des Müllers Lust Volkslied"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Helene Fischer",
+          "song": "Atemlos durch die Nacht"
+        },
+        {
+          "artist": "Scooter",
+          "song": "How Much Is the Fish?"
+        },
+        {
+          "artist": "DJ Robin & Schürze",
+          "song": "Layla"
+        },
+        {
+          "artist": "Mickie Krause",
+          "song": "Schatzi schenk mir ein Foto"
+        }
+      ]
+    }
   },
   {
     "id": "fr",
     "name": "France",
     "flag": "🇫🇷",
-    "djs": [
-      {
-        "artist": "David Guetta",
-        "song": "Titanium"
-      },
-      {
-        "artist": "DJ Snake",
-        "song": "Taki Taki"
-      },
-      {
-        "artist": "Bob Sinclar",
-        "song": "Love Generation"
-      },
-      {
-        "artist": "Martin Solveig",
-        "song": "Hello"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "David Guetta",
+          "song": "Titanium"
+        },
+        {
+          "artist": "DJ Snake",
+          "song": "Taki Taki"
+        },
+        {
+          "artist": "Bob Sinclar",
+          "song": "Love Generation"
+        },
+        {
+          "artist": "Martin Solveig",
+          "song": "Hello"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Téléphone",
+          "song": "Un autre monde"
+        },
+        {
+          "artist": "Indochine",
+          "song": "L'aventurier"
+        },
+        {
+          "artist": "Noir Désir",
+          "song": "Le vent nous portera"
+        },
+        {
+          "artist": "Johnny Hallyday",
+          "song": "Allumer le feu"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Indila",
+          "song": "Dernière danse"
+        },
+        {
+          "artist": "Zaz",
+          "song": "Je veux"
+        },
+        {
+          "artist": "Christine and the Queens",
+          "song": "Christine"
+        },
+        {
+          "artist": "Louane",
+          "song": "Jour 1"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Édith Piaf",
+          "song": "La Vie en rose"
+        },
+        {
+          "artist": "Charles Aznavour",
+          "song": "La Bohème"
+        },
+        {
+          "artist": "Joe Dassin",
+          "song": "Les Champs-Élysées"
+        },
+        {
+          "artist": "Charles Trenet",
+          "song": "La Mer"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Patrick Sébastien",
+          "song": "Les Sardines"
+        },
+        {
+          "artist": "La Bande à Basile",
+          "song": "La Chenille"
+        },
+        {
+          "artist": "Ottawan",
+          "song": "D.I.S.C.O."
+        },
+        {
+          "artist": "Gilbert Montagné",
+          "song": "On va s'aimer"
+        }
+      ]
+    }
   },
   {
     "id": "it",
     "name": "Italie",
     "flag": "🇮🇹",
-    "djs": [
-      {
-        "artist": "Gigi D'Agostino",
-        "song": "L'Amour Toujours"
-      },
-      {
-        "artist": "Benny Benassi",
-        "song": "Satisfaction"
-      },
-      {
-        "artist": "Meduza",
-        "song": "Piece of Your Heart"
-      },
-      {
-        "artist": "Gabry Ponte",
-        "song": "Geordie"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Gigi D'Agostino",
+          "song": "L'Amour Toujours"
+        },
+        {
+          "artist": "Benny Benassi",
+          "song": "Satisfaction"
+        },
+        {
+          "artist": "Meduza",
+          "song": "Piece of Your Heart"
+        },
+        {
+          "artist": "Gabry Ponte",
+          "song": "Geordie"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Måneskin",
+          "song": "Beggin'"
+        },
+        {
+          "artist": "Vasco Rossi",
+          "song": "Albachiara"
+        },
+        {
+          "artist": "Zucchero",
+          "song": "Senza una donna"
+        },
+        {
+          "artist": "Gianna Nannini",
+          "song": "Bello e impossibile"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Laura Pausini",
+          "song": "La solitudine"
+        },
+        {
+          "artist": "Eros Ramazzotti",
+          "song": "Più bella cosa"
+        },
+        {
+          "artist": "Mahmood",
+          "song": "Soldi"
+        },
+        {
+          "artist": "Tiziano Ferro",
+          "song": "Perdono"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Luciano Pavarotti",
+          "song": "O sole mio"
+        },
+        {
+          "artist": "Domenico Modugno",
+          "song": "Nel blu dipinto di blu"
+        },
+        {
+          "artist": "Andrea Bocelli",
+          "song": "Con te partirò"
+        },
+        {
+          "artist": "Musique napolitaine",
+          "song": "Tarantella napoletana",
+          "query": "Tarantella napoletana"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Raffaella Carrà",
+          "song": "A far l'amore comincia tu"
+        },
+        {
+          "artist": "Righeira",
+          "song": "Vamos a la playa"
+        },
+        {
+          "artist": "Toto Cutugno",
+          "song": "L'Italiano"
+        },
+        {
+          "artist": "Al Bano & Romina Power",
+          "song": "Felicità"
+        }
+      ]
+    }
   },
   {
     "id": "nl",
     "name": "Pays-Bas",
     "flag": "🇳🇱",
-    "djs": [
-      {
-        "artist": "Tiësto",
-        "song": "The Business"
-      },
-      {
-        "artist": "Martin Garrix",
-        "song": "Animals"
-      },
-      {
-        "artist": "Armin van Buuren",
-        "song": "Blah Blah Blah"
-      },
-      {
-        "artist": "Afrojack",
-        "song": "Take Over Control"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Tiësto",
+          "song": "The Business"
+        },
+        {
+          "artist": "Martin Garrix",
+          "song": "Animals"
+        },
+        {
+          "artist": "Armin van Buuren",
+          "song": "Blah Blah Blah"
+        },
+        {
+          "artist": "Afrojack",
+          "song": "Take Over Control"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Golden Earring",
+          "song": "Radar Love"
+        },
+        {
+          "artist": "Shocking Blue",
+          "song": "Venus"
+        },
+        {
+          "artist": "Within Temptation",
+          "song": "Ice Queen"
+        },
+        {
+          "artist": "Focus",
+          "song": "Hocus Pocus"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Duncan Laurence",
+          "song": "Arcade"
+        },
+        {
+          "artist": "Anouk",
+          "song": "Nobody's Wife"
+        },
+        {
+          "artist": "The Common Linnets",
+          "song": "Calm After the Storm"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "André Rieu",
+          "song": "The Second Waltz"
+        },
+        {
+          "artist": "Johnny Jordaan",
+          "song": "Geef mij maar Amsterdam"
+        },
+        {
+          "artist": "Chanson populaire",
+          "song": "Tulpen uit Amsterdam",
+          "query": "Tulpen uit Amsterdam"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Vengaboys",
+          "song": "We Like to Party!"
+        },
+        {
+          "artist": "2 Unlimited",
+          "song": "No Limit"
+        },
+        {
+          "artist": "Snollebollekes",
+          "song": "Links rechts"
+        },
+        {
+          "artist": "Joost",
+          "song": "Europapa"
+        }
+      ]
+    }
   },
   {
     "id": "en",
     "name": "Angleterre",
     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "djs": [
-      {
-        "artist": "Alan Walker",
-        "song": "Faded"
-      },
-      {
-        "artist": "Fatboy Slim",
-        "song": "Right Here, Right Now"
-      },
-      {
-        "artist": "Jonas Blue",
-        "song": "Fast Car"
-      },
-      {
-        "artist": "Joel Corry",
-        "song": "Head & Heart"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Alan Walker",
+          "song": "Faded"
+        },
+        {
+          "artist": "Fatboy Slim",
+          "song": "Right Here, Right Now"
+        },
+        {
+          "artist": "Jonas Blue",
+          "song": "Fast Car"
+        },
+        {
+          "artist": "Joel Corry",
+          "song": "Head & Heart"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Queen",
+          "song": "Bohemian Rhapsody"
+        },
+        {
+          "artist": "The Beatles",
+          "song": "Hey Jude"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "song": "Paint It, Black"
+        },
+        {
+          "artist": "Led Zeppelin",
+          "song": "Stairway to Heaven"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Ed Sheeran",
+          "song": "Shape of You"
+        },
+        {
+          "artist": "Adele",
+          "song": "Rolling in the Deep"
+        },
+        {
+          "artist": "Dua Lipa",
+          "song": "Levitating"
+        },
+        {
+          "artist": "Harry Styles",
+          "song": "As It Was"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Ballade anglaise",
+          "song": "Greensleeves",
+          "query": "Greensleeves traditional"
+        },
+        {
+          "artist": "Ballade anglaise",
+          "song": "Scarborough Fair",
+          "query": "Scarborough Fair traditional folk"
+        },
+        {
+          "artist": "Hymne anglais",
+          "song": "Jerusalem",
+          "query": "Jerusalem hymn Parry"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Spice Girls",
+          "song": "Wannabe"
+        },
+        {
+          "artist": "Wham!",
+          "song": "Wake Me Up Before You Go-Go"
+        },
+        {
+          "artist": "Chumbawamba",
+          "song": "Tubthumping"
+        },
+        {
+          "artist": "Elton John",
+          "song": "I'm Still Standing"
+        }
+      ]
+    }
   },
   {
     "id": "scan",
     "name": "Scandinavie",
     "flag": "🇸🇪🇳🇴",
-    "djs": [
-      {
-        "artist": "Avicii",
-        "song": "Wake Me Up"
-      },
-      {
-        "artist": "Swedish House Mafia",
-        "song": "Don't You Worry Child"
-      },
-      {
-        "artist": "Kygo",
-        "song": "Firestone"
-      },
-      {
-        "artist": "Eric Prydz",
-        "song": "Call On Me"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Avicii",
+          "song": "Wake Me Up"
+        },
+        {
+          "artist": "Swedish House Mafia",
+          "song": "Don't You Worry Child"
+        },
+        {
+          "artist": "Kygo",
+          "song": "Firestone"
+        },
+        {
+          "artist": "Eric Prydz",
+          "song": "Call On Me"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Europe",
+          "song": "The Final Countdown"
+        },
+        {
+          "artist": "The Hives",
+          "song": "Hate to Say I Told You So"
+        },
+        {
+          "artist": "Volbeat",
+          "song": "Still Counting"
+        },
+        {
+          "artist": "Ghost",
+          "song": "Mary on a Cross"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "ABBA",
+          "song": "Dancing Queen"
+        },
+        {
+          "artist": "a-ha",
+          "song": "Take On Me"
+        },
+        {
+          "artist": "Roxette",
+          "song": "It Must Have Been Love"
+        },
+        {
+          "artist": "Zara Larsson",
+          "song": "Lush Life"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Edvard Grieg",
+          "song": "Dans l'antre du roi de la montagne",
+          "query": "Grieg In the Hall of the Mountain King"
+        },
+        {
+          "artist": "Wardruna",
+          "song": "Helvegen"
+        },
+        {
+          "artist": "Chant de la Saint-Jean",
+          "song": "Små grodorna",
+          "query": "Små grodorna midsommar"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Aqua",
+          "song": "Barbie Girl"
+        },
+        {
+          "artist": "Rednex",
+          "song": "Cotton Eye Joe"
+        },
+        {
+          "artist": "Basshunter",
+          "song": "Now You're Gone"
+        },
+        {
+          "artist": "Ylvis",
+          "song": "The Fox"
+        }
+      ]
+    }
   },
   {
     "id": "ch",
     "name": "Suisse",
     "flag": "🇨🇭",
-    "djs": [
-      {
-        "artist": "DJ Antoine",
-        "song": "Ma Chérie"
-      },
-      {
-        "artist": "Yves Larock",
-        "song": "Rise Up"
-      },
-      {
-        "artist": "Remady",
-        "song": "No Superstar"
-      },
-      {
-        "artist": "Mike Candys",
-        "song": "One Night in Ibiza"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "DJ Antoine",
+          "song": "Ma Chérie"
+        },
+        {
+          "artist": "Yves Larock",
+          "song": "Rise Up"
+        },
+        {
+          "artist": "Remady",
+          "song": "No Superstar"
+        },
+        {
+          "artist": "Mike Candys",
+          "song": "One Night in Ibiza"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Gotthard",
+          "song": "Heaven"
+        },
+        {
+          "artist": "Krokus",
+          "song": "Long Stick Goes Boom"
+        },
+        {
+          "artist": "Züri West",
+          "song": "I schänke dir mis Härz"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Nemo",
+          "song": "The Code"
+        },
+        {
+          "artist": "Luca Hänni",
+          "song": "She Got Me"
+        },
+        {
+          "artist": "Stefanie Heinzmann",
+          "song": "My Man Is a Mean Man"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Ruedi Rymann",
+          "song": "Dr Schacher Seppli"
+        },
+        {
+          "artist": "Chant populaire",
+          "song": "Vreneli ab em Guggisberg",
+          "query": "Vreneli ab em Guggisberg"
+        },
+        {
+          "artist": "Cor des Alpes",
+          "song": "Alphorn",
+          "query": "Alphorn Schweiz Alphornbläser"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "DJ BoBo",
+          "song": "Chihuahua"
+        },
+        {
+          "artist": "Yello",
+          "song": "Oh Yeah"
+        },
+        {
+          "artist": "Baschi",
+          "song": "Bring en hei"
+        }
+      ]
+    }
   },
   {
     "id": "at",
     "name": "Autriche",
     "flag": "🇦🇹",
-    "djs": [
-      {
-        "artist": "Parov Stelar",
-        "song": "Booty Swing"
-      },
-      {
-        "artist": "Klangkarussell",
-        "song": "Sonnentanz"
-      },
-      {
-        "artist": "LUM!X",
-        "song": "Monster"
-      },
-      {
-        "artist": "DJ Ötzi",
-        "song": "Hey Baby"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Parov Stelar",
+          "song": "Booty Swing"
+        },
+        {
+          "artist": "Klangkarussell",
+          "song": "Sonnentanz"
+        },
+        {
+          "artist": "LUM!X",
+          "song": "Monster"
+        },
+        {
+          "artist": "DJ Ötzi",
+          "song": "Hey Baby"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Opus",
+          "song": "Live Is Life"
+        },
+        {
+          "artist": "Wanda",
+          "song": "Bologna"
+        },
+        {
+          "artist": "STS",
+          "song": "Fürstenfeld"
+        },
+        {
+          "artist": "Bilderbuch",
+          "song": "Maschin"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Falco",
+          "song": "Rock Me Amadeus"
+        },
+        {
+          "artist": "Conchita Wurst",
+          "song": "Rise Like a Phoenix"
+        },
+        {
+          "artist": "Christina Stürmer",
+          "song": "Ich lebe"
+        },
+        {
+          "artist": "Cesár Sampson",
+          "song": "Nobody But You"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Johann Strauss II",
+          "song": "An der schönen blauen Donau"
+        },
+        {
+          "artist": "Johann Strauss I",
+          "song": "Radetzky-Marsch"
+        },
+        {
+          "artist": "Chant tyrolien",
+          "song": "Kufsteinlied",
+          "query": "Kufsteinlied"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "DJ Ötzi",
+          "song": "Anton aus Tirol"
+        },
+        {
+          "artist": "Zillertaler Schürzenjäger",
+          "song": "Sierra Madre"
+        },
+        {
+          "artist": "EAV",
+          "song": "Ba-Ba-Banküberfall"
+        }
+      ]
+    }
   },
   {
     "id": "es",
     "name": "Espagne",
     "flag": "🇪🇸",
-    "djs": [
-      {
-        "artist": "Sak Noel",
-        "song": "Loca People"
-      },
-      {
-        "artist": "Juan Magán",
-        "song": "Bailando Por Ahí"
-      },
-      {
-        "artist": "Javi Mula",
-        "song": "Come On"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Sak Noel",
+          "song": "Loca People"
+        },
+        {
+          "artist": "Juan Magán",
+          "song": "Bailando Por Ahí"
+        },
+        {
+          "artist": "Javi Mula",
+          "song": "Come On"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Héroes del Silencio",
+          "song": "Entre dos tierras"
+        },
+        {
+          "artist": "Extremoduro",
+          "song": "So payaso"
+        },
+        {
+          "artist": "Mägo de Oz",
+          "song": "Fiesta pagana"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Enrique Iglesias",
+          "song": "Bailando"
+        },
+        {
+          "artist": "Rosalía",
+          "song": "Despechá"
+        },
+        {
+          "artist": "Alejandro Sanz",
+          "song": "Corazón partío"
+        },
+        {
+          "artist": "La Oreja de Van Gogh",
+          "song": "Rosas"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Paco de Lucía",
+          "song": "Entre dos aguas"
+        },
+        {
+          "artist": "Camarón de la Isla",
+          "song": "Volando voy"
+        },
+        {
+          "artist": "Sevillanas",
+          "song": "Sevillanas",
+          "query": "sevillanas Ecos del Rocío"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Los del Río",
+          "song": "Macarena"
+        },
+        {
+          "artist": "Las Ketchup",
+          "song": "Aserejé"
+        },
+        {
+          "artist": "Paquito el Chocolatero",
+          "song": "Paquito el Chocolatero",
+          "query": "Paquito el Chocolatero pasodoble"
+        },
+        {
+          "artist": "Georgie Dann",
+          "song": "El Chiringuito"
+        }
+      ]
+    }
   },
   {
     "id": "pt",
     "name": "Portugal",
     "flag": "🇵🇹",
-    "djs": [
-      {
-        "artist": "Buraka Som Sistema",
-        "song": "Hangover (BaBaBa)"
-      },
-      {
-        "artist": "Diego Miranda",
-        "song": "Ibiza for Dreams"
-      },
-      {
-        "artist": "Mastiksoul",
-        "song": "Taking Over Me"
-      },
-      {
-        "artist": "Kura",
-        "song": ""
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Buraka Som Sistema",
+          "song": "Hangover (BaBaBa)"
+        },
+        {
+          "artist": "Diego Miranda",
+          "song": "Ibiza for Dreams"
+        },
+        {
+          "artist": "Mastiksoul",
+          "song": "Taking Over Me"
+        },
+        {
+          "artist": "Kura",
+          "song": ""
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Xutos & Pontapés",
+          "song": "À minha maneira"
+        },
+        {
+          "artist": "Moonspell",
+          "song": "Full Moon Madness"
+        },
+        {
+          "artist": "GNR",
+          "song": "Dunas"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Salvador Sobral",
+          "song": "Amar pelos dois"
+        },
+        {
+          "artist": "Diogo Piçarra",
+          "song": "Já não falamos"
+        },
+        {
+          "artist": "Carolina Deslandes",
+          "song": "A Vida Toda"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Amália Rodrigues",
+          "song": "Barco Negro"
+        },
+        {
+          "artist": "Mariza",
+          "song": "Ó Gente da Minha Terra"
+        },
+        {
+          "artist": "Ana Moura",
+          "song": "Desfado"
+        },
+        {
+          "artist": "Madredeus",
+          "song": "O Pastor"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Quim Barreiros",
+          "song": "Bacalhau à portuguesa"
+        },
+        {
+          "artist": "Buraka Som Sistema",
+          "song": "Kalemba (Wegue Wegue)"
+        },
+        {
+          "artist": "Ana Malhoa",
+          "song": "Turbinada"
+        },
+        {
+          "artist": "Emanuel",
+          "song": "Pimba Pimba"
+        }
+      ]
+    }
   },
   {
     "id": "ru",
     "name": "Russie",
     "flag": "🇷🇺",
-    "djs": [
-      {
-        "artist": "Zedd",
-        "song": "The Middle"
-      },
-      {
-        "artist": "Arty",
-        "song": "Sunrise"
-      },
-      {
-        "artist": "Filatov & Karas",
-        "song": "Tell It to My Heart"
-      },
-      {
-        "artist": "Nina Kraviz",
-        "song": "Ghetto Kraviz"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Zedd",
+          "song": "The Middle"
+        },
+        {
+          "artist": "Arty",
+          "song": "Sunrise"
+        },
+        {
+          "artist": "Filatov & Karas",
+          "song": "Tell It to My Heart"
+        },
+        {
+          "artist": "Nina Kraviz",
+          "song": "Ghetto Kraviz"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Kino",
+          "song": "Gruppa krovi"
+        },
+        {
+          "artist": "DDT",
+          "song": "Chto takoye osen'"
+        },
+        {
+          "artist": "Mumiy Troll",
+          "song": "Vladivostok 2000"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "t.A.T.u.",
+          "song": "All the Things She Said"
+        },
+        {
+          "artist": "Dima Bilan",
+          "song": "Believe"
+        },
+        {
+          "artist": "Alla Pugacheva",
+          "song": "Million Alykh Roz"
+        },
+        {
+          "artist": "Polina Gagarina",
+          "song": "A Million Voices"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Chant populaire russe",
+          "song": "Kalinka",
+          "query": "Kalinka chant russe"
+        },
+        {
+          "artist": "Chant populaire russe",
+          "song": "Katioucha",
+          "query": "Katyusha song"
+        },
+        {
+          "artist": "Chant populaire russe",
+          "song": "Korobeïniki",
+          "query": "Korobeiniki folk song"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Little Big",
+          "song": "Skibidi"
+        },
+        {
+          "artist": "Ruki Vverh",
+          "song": "Kroshka moya"
+        },
+        {
+          "artist": "Leningrad",
+          "song": "Exhibit"
+        }
+      ]
+    }
   },
   {
     "id": "gr",
     "name": "Grèce",
     "flag": "🇬🇷",
-    "djs": [
-      {
-        "artist": "Playmen",
-        "song": "Fallin'"
-      },
-      {
-        "artist": "Claydee",
-        "song": "Mamacita Buena"
-      },
-      {
-        "artist": "Vangelis",
-        "song": "Chariots of Fire"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Playmen",
+          "song": "Fallin'"
+        },
+        {
+          "artist": "Claydee",
+          "song": "Mamacita Buena"
+        },
+        {
+          "artist": "Vangelis",
+          "song": "Chariots of Fire"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Aphrodite's Child",
+          "song": "Rain and Tears"
+        },
+        {
+          "artist": "Rotting Christ",
+          "song": "Non Serviam"
+        },
+        {
+          "artist": "Septicflesh",
+          "song": "Anubis"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Nana Mouskouri",
+          "song": "Plaisir d'amour"
+        },
+        {
+          "artist": "Sakis Rouvas",
+          "song": "Shake It"
+        },
+        {
+          "artist": "Marina Satti",
+          "song": "Zari"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Mikis Theodorakis",
+          "song": "Zorba le Grec (Sirtaki)",
+          "query": "Theodorakis Zorba the Greek sirtaki"
+        },
+        {
+          "artist": "Manos Hadjidakis",
+          "song": "Ta paidia tou Peiraia"
+        },
+        {
+          "artist": "Rebetiko",
+          "song": "Misirlou",
+          "query": "Misirlou rebetiko traditional"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Giorgos Alkaios",
+          "song": "OPA"
+        },
+        {
+          "artist": "Claydee",
+          "song": "Mamacita Buena"
+        },
+        {
+          "artist": "Marina Satti",
+          "song": "Mantissa"
+        }
+      ]
+    }
   },
   {
     "id": "is",
     "name": "Islande",
     "flag": "🇮🇸",
-    "djs": [
-      {
-        "artist": "GusGus",
-        "song": "Over"
-      },
-      {
-        "artist": "Kiasmos",
-        "song": "Blurred"
-      },
-      {
-        "artist": "Hatari",
-        "song": "Hatrið mun sigra"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "GusGus",
+          "song": "Over"
+        },
+        {
+          "artist": "Kiasmos",
+          "song": "Blurred"
+        },
+        {
+          "artist": "Hatari",
+          "song": "Hatrið mun sigra"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Of Monsters and Men",
+          "song": "Little Talks"
+        },
+        {
+          "artist": "Sigur Rós",
+          "song": "Hoppípolla"
+        },
+        {
+          "artist": "Kaleo",
+          "song": "Way Down We Go"
+        },
+        {
+          "artist": "The Sugarcubes",
+          "song": "Birthday"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Björk",
+          "song": "It's Oh So Quiet"
+        },
+        {
+          "artist": "Laufey",
+          "song": "From the Start"
+        },
+        {
+          "artist": "Ásgeir",
+          "song": "King and Cross"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Chant islandais",
+          "song": "Heyr himna smiður",
+          "query": "Heyr himna smiður"
+        },
+        {
+          "artist": "Chant islandais",
+          "song": "Á Sprengisandi",
+          "query": "Á Sprengisandi"
+        },
+        {
+          "artist": "Chant islandais",
+          "song": "Krummavísur",
+          "query": "Krummavísur"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Daði Freyr",
+          "song": "Think About Things"
+        },
+        {
+          "artist": "Páll Óskar",
+          "song": "Allt fyrir ástina"
+        },
+        {
+          "artist": "Supporters islandais",
+          "song": "Clapping viking",
+          "query": "Iceland viking thunder clap Euro 2016"
+        }
+      ]
+    }
   },
   {
     "id": "ie",
     "name": "Irlande",
     "flag": "🇮🇪",
-    "djs": [
-      {
-        "artist": "Shane Codd",
-        "song": "Get Out My Head"
-      },
-      {
-        "artist": "Belters Only",
-        "song": "Make Me Feel Good"
-      },
-      {
-        "artist": "Kettama",
-        "song": ""
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Shane Codd",
+          "song": "Get Out My Head"
+        },
+        {
+          "artist": "Belters Only",
+          "song": "Make Me Feel Good"
+        },
+        {
+          "artist": "Kettama",
+          "song": ""
+        }
+      ],
+      "rock": [
+        {
+          "artist": "U2",
+          "song": "With or Without You"
+        },
+        {
+          "artist": "The Cranberries",
+          "song": "Zombie"
+        },
+        {
+          "artist": "Thin Lizzy",
+          "song": "Whiskey in the Jar"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Hozier",
+          "song": "Take Me to Church"
+        },
+        {
+          "artist": "Sinéad O'Connor",
+          "song": "Nothing Compares 2 U"
+        },
+        {
+          "artist": "Westlife",
+          "song": "Swear It Again"
+        },
+        {
+          "artist": "Niall Horan",
+          "song": "Slow Hands"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "The Dubliners",
+          "song": "The Wild Rover"
+        },
+        {
+          "artist": "Enya",
+          "song": "Only Time"
+        },
+        {
+          "artist": "Clannad",
+          "song": "Harry's Game"
+        },
+        {
+          "artist": "Bill Whelan",
+          "song": "Riverdance"
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Jedward",
+          "song": "Lipstick"
+        },
+        {
+          "artist": "The Rubberbandits",
+          "song": "Horse Outside"
+        },
+        {
+          "artist": "Westlife",
+          "song": "Uptown Girl"
+        }
+      ]
+    }
   },
   {
     "id": "lu",
     "name": "Luxembourg",
     "flag": "🇱🇺",
-    "djs": [
-      {
-        "artist": "Packo Gualandris",
-        "song": ""
-      },
-      {
-        "artist": "Max Noesen",
-        "song": "Obverse"
-      },
-      {
-        "artist": "DAMA DJ Luxembourg",
-        "song": ""
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Packo Gualandris",
+          "song": ""
+        },
+        {
+          "artist": "Max Noesen",
+          "song": "Obverse"
+        },
+        {
+          "artist": "DAMA DJ Luxembourg",
+          "song": ""
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Chant luxembourgeois",
+          "song": "De Feierwon",
+          "query": "De Feierwon Luxembourg"
+        },
+        {
+          "artist": "Hymne luxembourgeois",
+          "song": "Ons Heemecht",
+          "query": "Ons Heemecht"
+        }
+      ]
+    }
   },
   {
     "id": "hr",
     "name": "Croatie",
     "flag": "🇭🇷",
-    "djs": [
-      {
-        "artist": "Matroda",
-        "song": "4u"
-      },
-      {
-        "artist": "Kosta Radman",
-        "song": "Bellerophon"
-      },
-      {
-        "artist": "Ivan Mastermix",
-        "song": "Ederlezi"
-      }
-    ]
+    "genres": {
+      "electro": [
+        {
+          "artist": "Matroda",
+          "song": "4u"
+        },
+        {
+          "artist": "Kosta Radman",
+          "song": "Bellerophon"
+        },
+        {
+          "artist": "Ivan Mastermix",
+          "song": "Ederlezi"
+        }
+      ],
+      "rock": [
+        {
+          "artist": "Prljavo Kazalište",
+          "song": "Mojoj majci"
+        },
+        {
+          "artist": "Parni Valjak",
+          "song": "Lutka za bal"
+        },
+        {
+          "artist": "Hladno Pivo",
+          "song": "Buba švabe"
+        },
+        {
+          "artist": "Let 3",
+          "song": "Mama ŠČ!"
+        }
+      ],
+      "pop": [
+        {
+          "artist": "Doris Dragović",
+          "song": "Marija Magdalena"
+        },
+        {
+          "artist": "Gibonni",
+          "song": "Zlatne godine"
+        },
+        {
+          "artist": "Nina Badrić",
+          "song": "Nebo"
+        }
+      ],
+      "trad": [
+        {
+          "artist": "Klapa Intrade",
+          "song": "Croatio iz duše te ljubim"
+        },
+        {
+          "artist": "Maksim Mrvica",
+          "song": "Croatian Rhapsody"
+        },
+        {
+          "artist": "Zlatni Dukati",
+          "song": ""
+        }
+      ],
+      "fete": [
+        {
+          "artist": "Baby Lasagna",
+          "song": "Rim Tim Tagi Dim"
+        },
+        {
+          "artist": "Severina",
+          "song": "Moja štikla"
+        }
+      ]
+    }
   }
 ]
