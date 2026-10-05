@@ -453,19 +453,22 @@ const savePicks = () => store.set(K.picks, picks);
    ========================================================= */
 const trackKey = t => `${t.artist}|${t.song || ""}`;
 const embedMode = () => settings.playMode !== "youtube";
-// Sur téléphone, un lien youtube.com ouvre l'appli YouTube. Le lecteur plein écran
-// youtube-nocookie.com/embed n'est pas pris en charge par l'appli : il reste dans le navigateur.
-const browserPlayer = () => !embedMode() && isPhone;
-const needsEmbeddable = () => embedMode() || browserPlayer();
-const youtubeUrl = id => browserPlayer()
-  ? `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=0`
-  : `https://www.youtube.com/watch?v=${id}`;
+const needsEmbeddable = () => embedMode();
+// Sur téléphone : version mobile du site YouTube, dans un nouvel onglet
+const youtubeUrl = id => isPhone ? `https://m.youtube.com/watch?v=${id}` : `https://www.youtube.com/watch?v=${id}`;
 function makeVideo(id, fallbackTitle){
   const s = DB.stats[id];
   return { id, title: s?.t || fallbackTitle || "Vidéo YouTube", views: s ? s.v : null, dur: s?.d ?? null };
 }
 // En lecture dans le site, on écarte les vidéos dont l'intégration est interdite
-const playableIds = t => (DB.tracks[trackKey(t)] || []).filter(id => !needsEmbeddable() || DB.stats[id]?.e !== false);
+// Lien écrit dans countries.json en premier, puis les vidéos trouvées par l'action GitHub
+function playableIds(t){
+  const fixed = extractId(t.youtube || t.videoId || "");
+  const all = [...new Set([...(fixed ? [fixed] : []), ...(DB.tracks[trackKey(t)] || [])])];
+  if (!needsEmbeddable()) return all;
+  const ok = all.filter(id => DB.stats[id]?.e !== false);
+  return ok.length ? ok : all; // si aucune n'est intégrable, on garde quand même le lien (bouton YouTube en secours)
+}
 const fmtDur = s => s == null ? "" : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 function videoFor(t){
   const key = trackKey(t), p = picks[key];
@@ -926,17 +929,21 @@ function showEmpty(msg){
   if (ytReady) { try{ ytPlayer.stopVideo(); }catch{} }
 }
 
+function showCard(id){
+  if (ytReady) { try{ ytPlayer.pauseVideo(); }catch{} }
+  $("#yt").style.visibility = "hidden";
+  const card = $("#ytCard");
+  card.href = youtubeUrl(id);
+  $("#ytThumb").src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  card.classList.remove("hidden");
+  return card.href;
+}
 function loadVideo(id, open=true){
   $("#playerEmpty").classList.add("hidden");
   const card = $("#ytCard");
   if (!embedMode()){
-    // carte cliquable + ouverture dans un onglet réutilisé (ou l'appli YouTube sur mobile)
-    if (ytReady) { try{ ytPlayer.pauseVideo(); }catch{} }
-    $("#yt").style.visibility = "hidden";
-    const url = youtubeUrl(id);
-    card.href = url;
-    $("#ytThumb").src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
-    card.classList.remove("hidden");
+    // carte cliquable + ouverture dans un nouvel onglet, toujours le même
+    const url = showCard(id);
     if (open) window.open(url, "djbattle_youtube");
     return;
   }
@@ -956,6 +963,11 @@ function handlePlayerError(code){
     t.tried++;
     renderTracks(); loadVideo(t.video.id);
     showNotice("Cette vidéo ne peut pas être lue ici, passage à une autre version.");
+    return;
+  }
+  if ([100,101,150].includes(code) && t.video){
+    showCard(t.video.id);
+    showNotice("Cette vidéo ne peut pas être lue dans le site : ouvrez-la sur YouTube.");
     return;
   }
   if (code === 153) showNotice("YouTube refuse la lecture : ouvrez le site via GitHub Pages ou http://localhost, pas en double-cliquant sur le fichier.");
