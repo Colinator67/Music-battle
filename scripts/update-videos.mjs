@@ -15,7 +15,7 @@ if (!KEY) { console.error("YT_API_KEY manquant : ajoutez le secret dans Settings
 
 const MIN_SECONDS = 60;
 const MAX_SECONDS = 7 * 60;
-const REV = 2; // version des règles de choix : changer ce nombre relance la sélection
+const REV = 3; // version des règles de choix : changer ce nombre relance la sélection
 
 const countries = JSON.parse(await readFile("data/countries.json", "utf8"));
 let db = {};
@@ -79,8 +79,8 @@ function score(d, info) {
   const own = norm(`${d.artist} ${d.song}`); // un mot présent dans le nom du morceau n'est pas pénalisé
   if (info.d == null || info.d < MIN_SECONDS || info.d > MAX_SECONDS) return null;
   for (const w of BANNED) if (hasWord(title, w) && !hasWord(own, w)) return null;
-  // "mix" seul (ex. "Mix 2024") hors nom du morceau
-  if (hasWord(title, "mix") && !hasWord(own, "mix")) return null;
+  // compilations et mixes de DJ (mais "Original Mix" et "Radio Mix" sont acceptés)
+  if (/(dj mix|mixed by|continuous mix|mix 20\d\d|best of|top \d+)/.test(title) && !own.includes("mix")) return null;
 
   let s = 0;
   if (/radio (edit|version|mix)/.test(title)) s += 5;
@@ -121,8 +121,10 @@ const tracks = {};
 try {
   await fetchDetails(wanted.flatMap(({ k, d }) => [...(d.videoId ? [d.videoId] : []), ...(oldTracks[k] || [])]));
 } catch (e) {
-  console.error(`Détails indisponibles : ${e.message}`);
-  for (const [id, s] of Object.entries(oldStats)) if (!details[id]) details[id] = s;
+  // Sans les détails (quota épuisé...), impossible de vérifier les vidéos :
+  // on s'arrête SANS toucher à data/videos.json pour ne rien effacer.
+  console.error(`Détails indisponibles (${e.message}). Fichier inchangé, nouvel essai au prochain passage.`);
+  process.exit(1);
 }
 const toSearch = [];
 for (const { k, d, pos } of wanted) {
